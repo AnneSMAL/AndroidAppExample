@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ui.welcome.WelcomeActivity">
+
+
+    <ImageView
+        android:id="@+id/welcome_henallux_image"
+        android:layout_width="@dimen/img_henallux_logo_width"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/henallux_logo" />
+
+    <TextView
+        android:id="@+id/welcome_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_title"
+        android:textColor="@color/textBody"
+        android:textSize="@dimen/text_size_headline_5"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/welcome_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/welcome_description"
+        android:textColor="@color/textBody"
+        android:textSize="@dimen/text_size_body_2" />
+
+    <Button
+        android:id="@+id/welcome_start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/module_title_start"
+        android:textColor="@android:color/white" />
+</LinearLayout>

@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Android App Example</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">IG3 - Développement mobile</string>
+    <string name="nav_header_subtitle">Anne SMAL &amp; Lisa TRAPLETTI</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_module_1">Module 1</string>
+    <string name="menu_module_2">Module 2</string>
+    <string name="menu_module_3">Module 3</string>
+
+    <string name="module_title_start">Start</string>
+
+
+    <string name="welcome_title">Welcome !</string>
+    <string name="welcome_description">Through this application, you will learn how to develop an Android mobile app.
+        Use it as an example : Go to the source code, test it with some rotation, plane mode, …
+        So that you will discover how to create your own super project. \n
+        OK, time to dive into the amazing Android World !
+    </string>
+
+    <!-- Module 1 Activities and Fragments -->
+    <string name="module_1_title">Activities &amp; Fragments</string>
+    <string name="module_1_description">Activities and fragments are the basis of a mobile application,
+        as they are representing your entire User Interface. \n
+        In this chapter, you will learn what is an activity, a fragment, and how Android OS is working
+        with them.
+    </string>
+
+    <string name="module_1_activity_lifecycle_title">Activity lifecycle</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!-- Module 2 Layouts -->
+    <string name="module_2_title">Layouts</string>
+    <string name="module_2_description">Layouts are XML files \"assembling\" all the UI components together.
+        Each activity and each fragment will, at least, be linked to one layout. \n
+        In this chapter, you will learn what is a layout, how to create one and how to link it to
+        an activity, a fragment, or another UI component.
+    </string>
+
+    <string name="module_2_layout_structure_title">Layout Structure</string>
+
+
+    <!-- Module 3 Resources -->
+    <string name="module_3_title">Resources</string>
+    <string name="module_3_description">TO COMPLETE
+    </string>
+
+    <string name="module_3_resources_types_title">Resources Types</string>
+    <string name="title_activity_first_module">FirstModuleActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="module_1_what_is_an_activity_description">An activity provides the window in which the app draws its UI.
+        Generally, one activity implements one screen in an app.  
+        You can combine multiple fragments in a single activity to build a multi-pane UI and reuse a fragment in multiple activities. You can think of a fragment as a modular section of an activity, which has its own lifecycle, receives its own input events, and which you can add or remove while the activity is running</string>
+    <string name="title_activity_welcome">Welcome !</string>
+</resources>
