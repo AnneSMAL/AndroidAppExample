@@ -3,20 +3,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_module_1_presentation">
+    app:startDestination="@+id/nav_mod1_presentation">
 
     <fragment
-        android:id="@+id/nav_module_1_presentation"
+        android:id="@+id/nav_mod1_presentation"
         android:name="be.henallux.ig3.android.app.example.ui.module1.ActivitiesPresentationFragment"
         android:label="@string/menu_module_1"
         tools:layout="@layout/fragment_module_presentation">
 
         <action
             android:id="@+id/action_PresentationFragment_to_ActivityLifecycleFragment"
-            app:destination="@id/nav_activities_lifecycle" />
+            app:destination="@id/nav_mod1_what_is_activity" />
     </fragment>
     <fragment
-        android:id="@+id/nav_activities_lifecycle"
+        android:id="@+id/nav_mod1_activities_lifecycle"
         android:name="be.henallux.ig3.android.app.example.ui.module1.ActivityLifecycleFragment"
         android:label="@string/module_1_activity_lifecycle_title"
         tools:layout="@layout/fragment_activity_lifecycle"/>
@@ -50,4 +50,13 @@
         android:name="be.henallux.ig3.android.app.example.ui.module3.ResourcesTypesFragment"
         android:label="@string/module_3_resources_types_title"
         tools:layout="@layout/fragment_resources_types" />
+    <fragment
+        android:id="@+id/nav_mod1_what_is_activity"
+        android:name="be.henallux.ig3.android.app.example.ui.module1.WhatIsAnActivityFragment"
+        android:label="@string/module_1_what_is_an_activity_title"
+        tools:layout="@layout/fragment_what_is_an_activity">
+        <action
+            android:id="@+id/action_whatIsAnActivityFragment_to_ActivityLifecycleFragment"
+            app:destination="@id/nav_mod1_activities_lifecycle" />
+    </fragment>
 </navigation>

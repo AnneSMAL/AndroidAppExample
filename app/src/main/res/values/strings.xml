@@ -14,6 +14,8 @@
     <string name="module_title_start">Start</string>
 
 
+    <string name="title_activity_welcome">Welcome !</string>
+
     <string name="welcome_title">Welcome !</string>
     <string name="welcome_description">Through this application, you will learn how to develop an Android mobile app.
         Use it as an example : Go to the source code, test it with some rotation, plane mode, …
@@ -30,6 +32,43 @@
     </string>
 
     <string name="module_1_activity_lifecycle_title">Activity lifecycle</string>
+
+    <string name="module_1_what_is_an_activity_title">What is an Activity ?</string>
+    <string name="module_1_what_is_an_activity_description">An <b>activity</b> provides the window
+        in which the app draws its UI. Generally, one activity implements one screen of the app. \n
+        Typically, one activity in an app is specified as the <b>main</b> activity,
+        which is the <b>first screen to appear when the user launches the app</b>.
+        Each activity can then start another activity in order to perform different actions.
+        \n \n
+
+        Of course, you can navigate through your own activities; But Android also permits to start
+        the main activity of other applications installed on the smartphone, in order to use a functionality of those.
+        Click on the next button to check and go to through the code to see how this navigation is implemented.
+    </string>
+
+    <string name="module_1_how_to_use_activities">To use activities in your app, you must register
+        information about them in the app\'s manifest. Go to the AndroidManifest.xml to check the
+        activities our application contains.</string>
+
+    <string name="module_1_go_to_camera">Use camera</string>
+
+    <string name="module_1_what_is_a_fragment"> As you can check, we didn\'t create an activity
+        for each screen of our app. It is because we decided to use <b>fragments</b>, combined to
+        our activities. \n \n
+        A <b>fragment</b> is a piece of user interface, used in an activity.
+        Fragments have been introduced by Android for app development on bigger devices, such as tablets :
+        As a fragment is only a "piece" of UI, you can combine multiple fragments in a single activity
+        to build a multi-pane UI and reuse a fragment in multiple activities. \n
+        Start an emulator of a tablet size, and check in the code how it is implemented.
+    </string>
+
+    <string name="module_1_multipane_fragment">See ? I can decide to add multiple fragments in a
+        single activity at the same time. You can think of a fragment as a modular section of an activity,
+        which has its own lifecycle, receives its own input events, and which you can add or remove
+        while the activity is running. \n
+        To continue this tutorial, use back your smartphone emulator.
+    </string>
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
@@ -51,16 +90,7 @@
 
     <string name="module_3_resources_types_title">Resources Types</string>
     <string name="title_activity_first_module">FirstModuleActivity</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
+
     <string name="next">Next</string>
     <string name="previous">Previous</string>
-
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-    <string name="module_1_what_is_an_activity_description">An activity provides the window in which the app draws its UI.
-        Generally, one activity implements one screen in an app.  
-        You can combine multiple fragments in a single activity to build a multi-pane UI and reuse a fragment in multiple activities. You can think of a fragment as a modular section of an activity, which has its own lifecycle, receives its own input events, and which you can add or remove while the activity is running</string>
-    <string name="title_activity_welcome">Welcome !</string>
 </resources>
