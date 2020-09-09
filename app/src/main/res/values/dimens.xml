@@ -26,5 +26,8 @@
 
 
     <dimen name="img_henallux_logo_width">150dp</dimen>
+    <dimen name="container_scroll_bottom_padding">64dp</dimen>
+    <dimen name="container_next_section_vertical_margin">32dp</dimen>
+    <dimen name="text_default_margin">8dp</dimen>
 
 </resources>

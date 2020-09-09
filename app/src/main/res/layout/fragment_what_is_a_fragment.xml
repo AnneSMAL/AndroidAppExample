@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginStart="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    tools:context=".ui.module1.WhatIsAFragmentFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/container_scroll_bottom_padding">
+
+            <TextView
+                android:id="@+id/what_is_a_fragment_description_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/module_1_what_is_a_fragment_description"
+                android:textColor="@color/textBody"
+                android:textSize="@dimen/text_size_body_2" />
+
+            <TextView
+                android:id="@+id/what_is_a_fragment_on_tablet_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/container_next_section_vertical_margin"
+                android:layout_marginBottom="@dimen/text_default_margin"
+                android:text="@string/module_1_fragments_on_tablet"
+                android:textSize="@dimen/text_size_body_2"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/what_is_a_fragment_smartphone_usage_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/module_1_fragments_smartphone" />
+
+            <TextView
+                android:id="@+id/what_is_a_fragment_on_smartphone_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/container_next_section_vertical_margin"
+                android:layout_marginBottom="@dimen/text_default_margin"
+                android:text="@string/module_1_fragments_on_smartphone"
+                android:textSize="@dimen/text_size_body_2"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/what_is_a_fragment_tablet_usage_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/module_1_fragments_tablets" />
+
+            <TextView
+                android:id="@+id/what_is_a_fragment_multipane_fragments_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/container_next_section_vertical_margin"
+                android:text="@string/module_1_multipane_fragment"
+                android:textColor="@color/textBody"
+                android:textSize="@dimen/text_size_body_2" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/what_is_a_fragment_next_button"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorPrimary"
+        android:padding="4dp"
+        android:text="@string/next"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

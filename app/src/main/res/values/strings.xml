@@ -35,15 +35,14 @@
 
     <string name="module_1_what_is_an_activity_title">What is an Activity ?</string>
     <string name="module_1_what_is_an_activity_description">An <b>activity</b> provides the window
-        in which the app draws its UI. Generally, one activity implements one screen of the app. \n
-        Typically, one activity in an app is specified as the <b>main</b> activity,
-        which is the <b>first screen to appear when the user launches the app</b>.
-        Each activity can then start another activity in order to perform different actions.
-        \n \n
+        in which the app draws its UI. Generally, one activity implements one screen of the app. \n \n
 
-        Of course, you can navigate through your own activities; But Android also permits to start
-        the main activity of other applications installed on the smartphone, in order to use a functionality of those.
-        Click on the next button to check and go to through the code to see how this navigation is implemented.
+        The <b>business</b> part of an activity is written in a <b>Java</b> (or Kotlin) class.
+        The <b>view</b> part is written in XML, and is also called the <b>layout</b> of an activity. \n \n
+
+        You can navigate through your own activities; But you can also navigate to other applications
+        installed on your smartphone (using your camera, your contacts, …) by reaching their main activity. \n
+        Click on the next button to take a picture and go to the code to see how this navigation is implemented.
     </string>
 
     <string name="module_1_how_to_use_activities">To use activities in your app, you must register
@@ -52,21 +51,24 @@
 
     <string name="module_1_go_to_camera">Use camera</string>
 
-    <string name="module_1_what_is_a_fragment"> As you can check, we didn\'t create an activity
+    <string name="module_1_what_is_a_fragment_title">What is a fragment ?</string>
+    <string name="module_1_what_is_a_fragment_description"> As you saw, we didn\'t create an activity
         for each screen of our app. It is because we decided to use <b>fragments</b>, combined to
         our activities. \n \n
         A <b>fragment</b> is a piece of user interface, used in an activity.
-        Fragments have been introduced by Android for app development on bigger devices, such as tablets :
+        Fragments have been introduced by Android for app development on bigger devices (such as tablets) :
         As a fragment is only a "piece" of UI, you can combine multiple fragments in a single activity
-        to build a multi-pane UI and reuse a fragment in multiple activities. \n
-        Start an emulator of a tablet size, and check in the code how it is implemented.
+        to build a multi-pane UI and reuse a fragment in different activities. \n
     </string>
 
-    <string name="module_1_multipane_fragment">See ? I can decide to add multiple fragments in a
-        single activity at the same time. You can think of a fragment as a modular section of an activity,
+    <string name="module_1_fragments_on_smartphone">On smartphone</string>
+    <string name="module_1_fragments_on_tablet">On tablet</string>
+
+    <string name="module_1_multipane_fragment">You can think of a fragment as a modular section of an activity,
         which has its own lifecycle, receives its own input events, and which you can add or remove
-        while the activity is running. \n
-        To continue this tutorial, use back your smartphone emulator.
+        while the activity is running. \n \n
+        Check the current fragment (WhatIsAFragmentFragment) class and try to understand how an
+        activity can integrate a fragment in its UI.
     </string>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>

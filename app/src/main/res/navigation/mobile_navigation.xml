@@ -56,7 +56,16 @@
         android:label="@string/module_1_what_is_an_activity_title"
         tools:layout="@layout/fragment_what_is_an_activity">
         <action
-            android:id="@+id/action_whatIsAnActivityFragment_to_ActivityLifecycleFragment"
+            android:id="@+id/action_WhatIsActivityFragment_to_WhatIsAFragmentFragment"
+            app:destination="@id/nav_mod1_what_is_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_mod1_what_is_fragment"
+        android:name="be.henallux.ig3.android.app.example.ui.module1.WhatIsAFragmentFragment"
+        android:label="@string/module_1_what_is_a_fragment_title"
+        tools:layout="@layout/fragment_what_is_a_fragment">
+        <action
+            android:id="@+id/action_WhatIsAFragmentFragment_to_ActivityLifecycleFragment"
             app:destination="@id/nav_mod1_activities_lifecycle" />
     </fragment>
 </navigation>

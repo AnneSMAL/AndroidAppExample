@@ -94,6 +94,6 @@ public class WhatIsAnActivityFragment extends Fragment {
      */
     private void goToNextFragment(View view) {
         Navigation.findNavController(view)
-                .navigate(R.id.action_whatIsAnActivityFragment_to_ActivityLifecycleFragment);
+                .navigate(R.id.action_WhatIsActivityFragment_to_WhatIsAFragmentFragment);
     }
 }
