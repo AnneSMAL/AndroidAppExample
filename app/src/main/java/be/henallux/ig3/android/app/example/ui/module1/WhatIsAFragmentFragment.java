@@ -12,7 +12,8 @@ import androidx.navigation.Navigation;
 import be.henallux.ig3.android.app.example.R;
 
 /**
- * A simple {@link Fragment} subclass.
+ * A simple {@link Fragment} subclass. Go to the @{@link Fragment} class to check all the methods
+ * you could override. You will learn more about it in the next screen.
  */
 public class WhatIsAFragmentFragment extends Fragment {
 
@@ -20,7 +21,11 @@ public class WhatIsAFragmentFragment extends Fragment {
         // Required empty public constructor
     }
 
-
+    /**
+     * Overriding this method permits to link the fragment to its corresponding layout XML. It also
+     * permits us to bind the UI components in variables, to reuse them later in our Fragment class. <br/>
+     * You will learn more about this @onCreateView method in the next fragment, @{@link ActivityLifecycleFragment}
+     */
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

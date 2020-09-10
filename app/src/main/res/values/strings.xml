@@ -67,9 +67,21 @@
     <string name="module_1_multipane_fragment">You can think of a fragment as a modular section of an activity,
         which has its own lifecycle, receives its own input events, and which you can add or remove
         while the activity is running. \n \n
-        Check the current fragment (WhatIsAFragmentFragment) class and try to understand how an
+        Check <b>WhatIsAFragmentFragment</b> class and try to understand how an
         activity can integrate a fragment in its UI.
     </string>
+
+    <string name="module_1_every_activity_has_its_lifecycle">An activity has its own lifecycle : </string>
+    <string name="module_1_go_to_lifecycle_testing_activity">Go to the <b>LifecycleTestingActivity</b>
+        and discover how this lifecycle is working. For this, use the logs and the code.</string>
+    <string name="module_1_test_lifecycle">Test lifecycle</string>
+    <string name="module_1_fragment_lifecycle">Fragments also have their own lifecycle, which is very
+        similar to activity lifecycle, but has some particularities. Go to the <b>LifecycleTestingFragment</b>
+        to check the differences with the activity lifecycle.</string>
+
+    <string name="title_activity_lifecycle_testing">LifecycleTestingActivity</string>
+    <string name="module_1_lifecycle_testing_description">Time to play with the emulator ! \n
+        Afterwards, do not forget to analyse what happened in your logs</string>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
@@ -91,8 +103,10 @@
     </string>
 
     <string name="module_3_resources_types_title">Resources Types</string>
-    <string name="title_activity_first_module">FirstModuleActivity</string>
 
     <string name="next">Next</string>
     <string name="previous">Previous</string>
+    <string name="done">Done</string>
+
+
 </resources>

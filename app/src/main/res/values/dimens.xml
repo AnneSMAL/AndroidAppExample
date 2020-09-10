@@ -24,10 +24,16 @@
     <dimen name="text_size_caption">12sp</dimen>
     <dimen name="text_size_overline">10sp</dimen>
 
-
+    <!-- Images Sizes -->
     <dimen name="img_henallux_logo_width">150dp</dimen>
+
+    <!-- Text Margins & Paddings -->
+    <dimen name="text_default_margin">8dp</dimen>
+
+
+    <!-- Containers Margins -->
     <dimen name="container_scroll_bottom_padding">64dp</dimen>
     <dimen name="container_next_section_vertical_margin">32dp</dimen>
-    <dimen name="text_default_margin">8dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
 
 </resources>
