@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginStart="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    tools:context=".ui.module1.SecondUiFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/container_scroll_bottom_padding">
+
+            <TextView
+                android:id="@+id/second_ui_passing_arguments_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/module_1_passing_arguments_description"
+                android:textColor="@color/textBody"
+                android:textSize="@dimen/text_size_body_2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/container_form_centered_horizontal_margin"
+                android:layout_marginStart="@dimen/container_form_centered_horizontal_margin"
+                android:layout_marginRight="@dimen/container_form_centered_horizontal_margin"
+                android:layout_marginEnd="@dimen/container_form_centered_horizontal_margin"
+                android:layout_marginTop="@dimen/container_next_section_vertical_margin"
+                android:layout_marginBottom="@dimen/text_default_margin">
+
+                <TextView
+                    android:id="@+id/second_ui_name_title_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/module_1_first_ui_name"
+                    android:textSize="@dimen/text_size_body_1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/second_ui_name_value_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/textBody"
+                    android:textSize="@dimen/text_size_body_1"
+                    tools:text="Lisa Tr." />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/container_form_centered_horizontal_margin"
+                android:layout_marginStart="@dimen/container_form_centered_horizontal_margin"
+                android:layout_marginRight="@dimen/container_form_centered_horizontal_margin"
+                android:layout_marginEnd="@dimen/container_form_centered_horizontal_margin"
+                android:layout_marginBottom="@dimen/text_default_margin">
+
+                <TextView
+                    android:id="@+id/second_ui_age_title_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/module_1_first_ui_age"
+                    android:textSize="@dimen/text_size_body_1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/second_ui_age_value_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/textBody"
+                    android:textSize="@dimen/text_size_body_1"
+                    tools:text="27" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/container_form_centered_horizontal_margin"
+                android:layout_marginStart="@dimen/container_form_centered_horizontal_margin"
+                android:layout_marginRight="@dimen/container_form_centered_horizontal_margin"
+                android:layout_marginEnd="@dimen/container_form_centered_horizontal_margin"
+                android:layout_marginBottom="@dimen/text_default_margin">
+
+                <TextView
+                    android:id="@+id/second_ui_mail_title_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/module_1_first_ui_mail"
+                    android:textSize="@dimen/text_size_body_1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/second_ui_mail_value_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/textBody"
+                    android:textSize="@dimen/text_size_body_1"
+                    tools:text="lisa.tr@henallux.be" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/second_ui_done_button"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorPrimary"
+        android:padding="4dp"
+        android:text="@string/done"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

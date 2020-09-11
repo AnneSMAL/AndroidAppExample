@@ -83,6 +83,17 @@
     <string name="module_1_lifecycle_testing_description">Time to play with the emulator ! \n
         Afterwards, do not forget to analyse what happened in your logs</string>
 
+    <string name="module_1_first_ui_name">Name</string>
+    <string name="module_1_first_ui_age">Age</string>
+    <string name="module_1_first_ui_mail">Mail</string>
+    <string name="module_1_first_ui_password">Password</string>
+    <string name="module_1_first_toast">Toast</string>
+    <string name="module_1_toast_hello_message">Hello %1$s, this is a toast !</string>
+
+    <string name="module_1_passing_arguments_description">It is possible to pass some
+    information from a fragment to another, using <b>bundles</b>. Go to the <b>FirstUiFragment</b>
+    and <b>SecondUiFragment</b> classes to check this mechanism.</string>
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
@@ -107,6 +118,9 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
     <string name="done">Done</string>
+    <string name="module_1_mandatory_field">Mandatory field</string>
+    <string name="module_1_first_ui_not_valid_age">Not valid age</string>
+    <string name="module_1_first_ui_invalid_format">Invalid format</string>
 
 
 </resources>

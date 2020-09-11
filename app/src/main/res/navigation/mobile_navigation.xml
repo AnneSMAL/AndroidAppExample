@@ -19,7 +19,11 @@
         android:id="@+id/nav_mod1_activities_lifecycle"
         android:name="be.henallux.ig3.android.app.example.ui.module1.ActivityLifecycleFragment"
         android:label="@string/module_1_activity_lifecycle_title"
-        tools:layout="@layout/fragment_activity_lifecycle"/>
+        tools:layout="@layout/fragment_activity_lifecycle">
+        <action
+            android:id="@+id/action_activityLifecycleFragment_to_firstUiFragment"
+            app:destination="@id/nav_mod1_first_ui" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_module_2_presentation"
@@ -67,5 +71,34 @@
         <action
             android:id="@+id/action_WhatIsAFragmentFragment_to_ActivityLifecycleFragment"
             app:destination="@id/nav_mod1_activities_lifecycle" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_mod1_first_ui"
+        android:name="be.henallux.ig3.android.app.example.ui.module1.FirstUiFragment"
+        android:label="fragment_first_ui"
+        tools:layout="@layout/fragment_first_ui">
+        <action
+            android:id="@+id/action_FirstUiFragment_to_SecondUiFragment"
+            app:destination="@id/nav_mod1_second_ui" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_mod1_second_ui"
+        android:name="be.henallux.ig3.android.app.example.ui.module1.SecondUiFragment"
+        android:label="fragment_second_ui"
+        tools:layout="@layout/fragment_second_ui">
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="age"
+            app:argType="integer" />
+        <argument
+            android:name="mail"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_SecondUiFragment_to_Mod1PresentationFragment"
+            app:destination="@id/nav_mod1_presentation"
+            app:popUpTo="@id/nav_mod1_presentation"
+            app:popUpToInclusive="true" />
     </fragment>
 </navigation>

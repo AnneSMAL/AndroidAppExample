@@ -33,7 +33,7 @@ public class ActivityLifecycleFragment extends Fragment {
         final Button nextButton = root.findViewById(R.id.activity_lifecycle_next_button);
 
         goToLifecycleTestingActivityButton.setOnClickListener(view -> goToLifecycleTestingActivity());
-        //nextButton.setOnClickListener(this::goToNextFragment);
+        nextButton.setOnClickListener(this::goToNextFragment);
 
         return root;
     }
@@ -51,6 +51,6 @@ public class ActivityLifecycleFragment extends Fragment {
      */
     private void goToNextFragment(View view) {
         Navigation.findNavController(view)
-                .navigate(R.id.action_WhatIsAFragmentFragment_to_ActivityLifecycleFragment);
+                .navigate(R.id.action_activityLifecycleFragment_to_firstUiFragment);
     }
 }
