@@ -37,19 +37,57 @@
     <string name="module_1_what_is_an_activity_description">An <b>activity</b> provides the window
         in which the app draws its UI. Generally, one activity implements one screen of the app. \n \n
 
-        The <b>business</b> part of an activity is written in a <b>Java</b> (or Kotlin) class.
-        The <b>view</b> part is written in XML, and is also called the <b>layout</b> of an activity. \n \n
+        <b><u>How to create an activity ?</u></b> \n
+        For this, we need : \n
+        - A Java (or Kotlin) class extending Activity; \n
+        - A layout; \n
+        - To declare it in the app\'s manifest (AndroidManifest.xml); \n \n
 
-        You can navigate through your own activities; But you can also navigate to other applications
-        installed on your smartphone (using your camera, your contacts, …) by reaching their main activity. \n
-        Click on the next button to take a picture and go to the code to see how this navigation is implemented.
+        The <b>Java class</b> represents the <i>business</i> part of an activity. \n
+        The <b>layout</b> represents its view part, written in XML. You will have more details about
+        layouts in the next chapter. \n \n \n
+
+        <b><u>How to navigate through activities ?</u></b> \n
+        By using an <b>intent</b>. There are two types of them : \n
+        - <b>Explicit intent</b> : Start activities of your app \n
+        - <b>Implicit intent</b> : Start activities of other applications (Contacts, SMS, …) \n \n
+
+        Go to the <i>WelcomeActivity</i> to discover how to create an explicit intent. \n
+        For the implicit intent, click on the next button and go to the code to check the differences between
+        the two intents.
     </string>
 
-    <string name="module_1_how_to_use_activities">To use activities in your app, you must register
-        information about them in the app\'s manifest. Go to the AndroidManifest.xml to check the
-        activities our application contains.</string>
+    <string name="module_1_how_to_use_activities">When you send an Intent, if Android sees more
+        than one app that can handle it, it will show a Chooser. Android knows which app can handle
+        which actions by checking their Manifest. \n
+        That\'s why in our example, we had to write in the manifest that we are using the camera. \n
+        Go to the manifest to check.
+    </string>
 
     <string name="module_1_go_to_camera">Use camera</string>
+
+
+    <string name="module_1_every_activity_has_its_lifecycle">An activity has its own lifecycle : </string>
+    <string name="module_1_go_to_lifecycle_testing_activity"> <b>NEVER</b> call these methods yourself :
+        This lifecycle is managed only by Android. \n \n
+        Understanding the lifecycle of an activity, and what you can / should do at each step is very
+        important part of the mobile development. \n
+        Go to the <b>LifecycleTestingActivity</b> and discover how this lifecycle is working and how
+        Android is managing it.</string>
+    <string name="module_1_test_lifecycle">Test lifecycle</string>
+
+    <string name="title_activity_lifecycle_testing">LifecycleTestingActivity</string>
+    <string name="module_1_lifecycle_testing_description">Time to play with the emulator ! \n
+        Afterwards, do not forget to analyse what happened in your logs. \n \n
+        Mastering the lifecycle of an activity will considerably help you to avoid a lot of bugs.
+        Some questions you can try to answer : What is happening if \n
+
+        - I\'m initializing my variable in onStart() instead of onCreate() ? \n
+        - I\'m leaving the application ? \n
+        - I\'m rotating the phone ? \n
+        - Android is killing my app to free some resources for other apps ? (Yes, … it does) \n
+    </string>
+
 
     <string name="module_1_what_is_a_fragment_title">What is a fragment ?</string>
     <string name="module_1_what_is_a_fragment_description"> As you saw, we didn\'t create an activity
@@ -60,6 +98,9 @@
         As a fragment is only a "piece" of UI, you can combine multiple fragments in a single activity
         to build a multi-pane UI and reuse a fragment in different activities. \n
     </string>
+    <string name="module_1_fragment_lifecycle">Fragments also have their own lifecycle, which is very
+        similar to activity lifecycle, but has some particularities. Go to the <b>LifecycleTestingFragment</b>
+        to check the differences with the activity lifecycle.</string>
 
     <string name="module_1_fragments_on_smartphone">On smartphone</string>
     <string name="module_1_fragments_on_tablet">On tablet</string>
@@ -71,17 +112,6 @@
         activity can integrate a fragment in its UI.
     </string>
 
-    <string name="module_1_every_activity_has_its_lifecycle">An activity has its own lifecycle : </string>
-    <string name="module_1_go_to_lifecycle_testing_activity">Go to the <b>LifecycleTestingActivity</b>
-        and discover how this lifecycle is working. For this, use the logs and the code.</string>
-    <string name="module_1_test_lifecycle">Test lifecycle</string>
-    <string name="module_1_fragment_lifecycle">Fragments also have their own lifecycle, which is very
-        similar to activity lifecycle, but has some particularities. Go to the <b>LifecycleTestingFragment</b>
-        to check the differences with the activity lifecycle.</string>
-
-    <string name="title_activity_lifecycle_testing">LifecycleTestingActivity</string>
-    <string name="module_1_lifecycle_testing_description">Time to play with the emulator ! \n
-        Afterwards, do not forget to analyse what happened in your logs</string>
 
     <string name="module_1_first_ui_name">Name</string>
     <string name="module_1_first_ui_age">Age</string>

@@ -55,6 +55,6 @@ public class ActivityLifecycleFragment extends Fragment {
      */
     private void goToNextFragment(View view) {
         Navigation.findNavController(view)
-                .navigate(R.id.action_activityLifecycleFragment_to_firstUiFragment);
+                .navigate(R.id.action_activityLifecycleFragment_to_whatIsAFragmentFragment);
     }
 }

@@ -17,6 +17,6 @@ public class ActivitiesPresentationFragment extends ModulePresentationFragment {
 
     @Override
     protected Integer getNextScreenNavigationAction() {
-        return R.id.action_PresentationFragment_to_ActivityLifecycleFragment;
+        return R.id.action_PresentationFragment_to_WhatIsAnActivityFragment;
     }
 }

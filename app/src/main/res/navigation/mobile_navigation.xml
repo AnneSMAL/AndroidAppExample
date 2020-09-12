@@ -3,21 +3,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_mod1_presentation">
+    app:startDestination="@+id/mod1PresentationFragment">
 
     <fragment
-        android:id="@+id/nav_mod1_presentation"
+        android:id="@+id/mod1PresentationFragment"
         android:name="be.henallux.ig3.android.app.example.ui.module1.ActivitiesPresentationFragment"
         android:label="@string/menu_module_1"
         tools:layout="@layout/main_fragment_module_presentation">
 
         <action
-            android:id="@+id/action_PresentationFragment_to_ActivityLifecycleFragment"
+            android:id="@+id/action_PresentationFragment_to_WhatIsAnActivityFragment"
             app:destination="@id/mod1_nav_graph" />
     </fragment>
 
     <fragment
-        android:id="@+id/nav_module_2_presentation"
+        android:id="@+id/mod2PresentationFragment"
         android:name="be.henallux.ig3.android.app.example.ui.module2.LayoutsPresentationFragment"
         android:label="@string/menu_module_2"
         tools:layout="@layout/main_fragment_module_presentation">
@@ -32,19 +32,14 @@
         tools:layout="@layout/mod2_fragment_layout_structure" />
 
     <fragment
-        android:id="@+id/nav_module_3_presentation"
+        android:id="@+id/mod3PresentationFragment"
         android:name="be.henallux.ig3.android.app.example.ui.module3.ResourcesPresentationFragment"
         android:label="@string/menu_module_3"
         tools:layout="@layout/main_fragment_module_presentation">
         <action
             android:id="@+id/action_PresentationFragment_to_ResourcesTypesFragment"
-            app:destination="@id/nav_resources_types" />
+            app:destination="@id/mod3_nav_graph" />
     </fragment>
-    <fragment
-        android:id="@+id/nav_resources_types"
-        android:name="be.henallux.ig3.android.app.example.ui.module3.ResourcesTypesFragment"
-        android:label="@string/module_3_resources_types_title"
-        tools:layout="@layout/mod3_fragment_resources_types" />
     <navigation
         android:id="@+id/mod1_nav_graph"
         app:startDestination="@id/nav_mod1_what_is_activity">
@@ -54,8 +49,8 @@
             android:label="@string/module_1_what_is_an_activity_title"
             tools:layout="@layout/mod1_fragment_what_is_an_activity">
             <action
-                android:id="@+id/action_WhatIsActivityFragment_to_WhatIsAFragmentFragment"
-                app:destination="@id/nav_mod1_what_is_fragment" />
+                android:id="@+id/action_WhatIsActivityFragment_to_ActivityLifecycleFragment"
+                app:destination="@id/nav_mod1_activities_lifecycle" />
         </fragment>
         <fragment
             android:id="@+id/nav_mod1_what_is_fragment"
@@ -63,8 +58,8 @@
             android:label="@string/module_1_what_is_a_fragment_title"
             tools:layout="@layout/mod1_fragment_what_is_a_fragment">
             <action
-                android:id="@+id/action_WhatIsAFragmentFragment_to_ActivityLifecycleFragment"
-                app:destination="@id/nav_mod1_activities_lifecycle" />
+                android:id="@+id/action_WhatIsAFragmentFragment_to_firstUiFragment"
+                app:destination="@id/nav_mod1_first_ui" />
         </fragment>
         <fragment
             android:id="@+id/nav_mod1_activities_lifecycle"
@@ -72,8 +67,8 @@
             android:label="@string/module_1_activity_lifecycle_title"
             tools:layout="@layout/mod1_fragment_activity_lifecycle">
             <action
-                android:id="@+id/action_activityLifecycleFragment_to_firstUiFragment"
-                app:destination="@id/nav_mod1_first_ui" />
+                android:id="@+id/action_activityLifecycleFragment_to_whatIsAFragmentFragment"
+                app:destination="@id/nav_mod1_what_is_fragment" />
         </fragment>
         <fragment
             android:id="@+id/nav_mod1_first_ui"
@@ -91,8 +86,8 @@
             tools:layout="@layout/mod1_fragment_second_ui">
             <action
                 android:id="@+id/action_SecondUiFragment_to_Mod1PresentationFragment"
-                app:destination="@id/nav_mod1_presentation"
-                app:popUpTo="@id/nav_mod1_presentation"
+                app:destination="@id/mod1PresentationFragment"
+                app:popUpTo="@id/mod1PresentationFragment"
                 app:popUpToInclusive="true" />
             <argument
                 android:name="age"
@@ -104,5 +99,58 @@
                 android:name="name"
                 app:argType="string" />
         </fragment>
+    </navigation>
+    <navigation
+        android:id="@+id/mod3_nav_graph"
+        app:startDestination="@id/resourcesTypesFragment">
+        <fragment
+            android:id="@+id/resourcesTypesFragment"
+            android:name="be.henallux.ig3.android.app.example.ui.module3.ResourcesTypesFragment"
+            android:label="@string/module_3_resources_types_title"
+            tools:layout="@layout/mod3_fragment_resources_types">
+            <action
+                android:id="@+id/action_ResourcesTypesFragment_to_DrawableResourcesFragment"
+                app:destination="@id/drawableResourcesFragment" />
+            <action
+                android:id="@+id/action_ResourcesTypesFragment_to_menuResourcesFragment"
+                app:destination="@id/menuResourcesFragment" />
+            <action
+                android:id="@+id/action_ResourcesTypesFragment_to_mipMapResourcesFragment"
+                app:destination="@id/mipMapResourcesFragment" />
+            <action
+                android:id="@+id/action_ResourcesTypesFragment_to_navigationResourcesFragment"
+                app:destination="@id/navigationResourcesFragment" />
+            <action
+                android:id="@+id/action_ResourcesTypesFragment_to_valuesResourcesFragment"
+                app:destination="@id/valuesResourcesFragment" />
+            <action
+                android:id="@+id/action_ResourcesTypesFragment_to_LayoutsPresentationFragment"
+                app:destination="@id/mod2PresentationFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/drawableResourcesFragment"
+            android:name="be.henallux.ig3.android.app.example.ui.module3.DrawableResourcesFragment"
+            android:label="mod3_fragment_drawable_resources"
+            tools:layout="@layout/mod3_fragment_drawable_resources" />
+        <fragment
+            android:id="@+id/menuResourcesFragment"
+            android:name="be.henallux.ig3.android.app.example.ui.module3.MenuResourcesFragment"
+            android:label="mod3_fragment_menu_resources"
+            tools:layout="@layout/mod3_fragment_menu_resources" />
+        <fragment
+            android:id="@+id/mipMapResourcesFragment"
+            android:name="be.henallux.ig3.android.app.example.ui.module3.MipMapResourcesFragment"
+            android:label="mod3_fragment_mip_map_resources"
+            tools:layout="@layout/mod3_fragment_mip_map_resources" />
+        <fragment
+            android:id="@+id/navigationResourcesFragment"
+            android:name="be.henallux.ig3.android.app.example.ui.module3.NavigationResourcesFragment"
+            android:label="mod3_fragment_navigation_resources"
+            tools:layout="@layout/mod3_fragment_navigation_resources" />
+        <fragment
+            android:id="@+id/valuesResourcesFragment"
+            android:name="be.henallux.ig3.android.app.example.ui.module3.ValuesResourcesFragment"
+            android:label="mod3_fragment_values_resources"
+            tools:layout="@layout/mod3_fragment_values_resources" />
     </navigation>
 </navigation>
