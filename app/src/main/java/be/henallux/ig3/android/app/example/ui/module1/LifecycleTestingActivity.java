@@ -31,7 +31,7 @@ public class LifecycleTestingActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lifecycle_testing);
+        setContentView(R.layout.mod1_activity_lifecycle_testing);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);

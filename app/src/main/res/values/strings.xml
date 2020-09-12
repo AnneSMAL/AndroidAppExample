@@ -94,7 +94,9 @@
     information from a fragment to another, using <b>bundles</b>. Go to the <b>FirstUiFragment</b>
     and <b>SecondUiFragment</b> classes to check this mechanism.</string>
 
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="module_1_mandatory_field">Mandatory field</string>
+    <string name="module_1_first_ui_not_valid_age">Not valid age</string>
+    <string name="module_1_first_ui_invalid_format">Invalid format</string>
 
 
     <!-- Module 2 Layouts -->
@@ -110,17 +112,35 @@
 
     <!-- Module 3 Resources -->
     <string name="module_3_title">Resources</string>
-    <string name="module_3_description">TO COMPLETE
+    <string name="module_3_description">Layouts, images, colors, navigation, strings, … Resources
+        are a very important part of the Android Development. In this module, you will learn
+        what is the role of each resource type, and how to use them efficiently in your app.
     </string>
 
     <string name="module_3_resources_types_title">Resources Types</string>
 
+    <string name="module_3_resources_organisation_by_android_studio">Android is requiring a specific
+        structure in its projects, and this includes the <b>resources</b> part as well.
+        Under the folder <b>res</b>, you can find the following sub-folders :
+    </string>
+    <string name="module_3_resource_type_drawable" translatable="false">Drawable</string>
+    <string name="module_3_resource_type_layout" translatable="false">Layout</string>
+    <string name="module_3_resource_type_menu" translatable="false">Menu</string>
+    <string name="module_3_resource_type_mipmap" translatable="false">Mipmap</string>
+    <string name="module_3_resource_type_navigation" translatable="false">Navigation</string>
+    <string name="module_3_resource_type_values" translatable="false">Values</string>
+
     <string name="next">Next</string>
     <string name="previous">Previous</string>
     <string name="done">Done</string>
-    <string name="module_1_mandatory_field">Mandatory field</string>
-    <string name="module_1_first_ui_not_valid_age">Not valid age</string>
-    <string name="module_1_first_ui_invalid_format">Invalid format</string>
 
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_module">ModuleActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
 </resources>

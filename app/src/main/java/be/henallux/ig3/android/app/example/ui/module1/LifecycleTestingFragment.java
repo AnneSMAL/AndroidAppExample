@@ -33,7 +33,7 @@ public class LifecycleTestingFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         Log.i(TAG, "Fragment - onCreateView()");
 
-        View root = inflater.inflate(R.layout.fragment_lifecycle_testing, container, false);
+        View root = inflater.inflate(R.layout.mod1_fragment_lifecycle_testing, container, false);
 
         final Button doneButton = root.findViewById(R.id.lifecycle_testing_done_button);
         doneButton.setOnClickListener(view -> {

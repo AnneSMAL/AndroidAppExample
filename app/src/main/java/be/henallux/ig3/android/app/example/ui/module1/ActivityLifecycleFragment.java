@@ -26,7 +26,7 @@ public class ActivityLifecycleFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View root = inflater.inflate(R.layout.fragment_activity_lifecycle, container, false);
+        View root = inflater.inflate(R.layout.mod1_fragment_activity_lifecycle, container, false);
 
         final Button goToLifecycleTestingActivityButton = root.findViewById(R.id.activity_lifecycle_go_to_testing_button);
         final Button nextButton = root.findViewById(R.id.activity_lifecycle_next_button);

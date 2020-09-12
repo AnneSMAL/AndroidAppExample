@@ -30,7 +30,7 @@ public class FirstUiFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View root = inflater.inflate(R.layout.fragment_first_ui, container, false);
+        View root = inflater.inflate(R.layout.mod1_fragment_first_ui, container, false);
 
         nameLayout = root.findViewById(R.id.first_ui_name_text_input_layout);
         ageLayout = root.findViewById(R.id.first_ui_age_text_input_layout);

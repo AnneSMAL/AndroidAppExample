@@ -33,7 +33,7 @@ public class WhatIsAnActivityFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View root = inflater.inflate(R.layout.fragment_what_is_an_activity, container, false);
+        View root = inflater.inflate(R.layout.mod1_fragment_what_is_an_activity, container, false);
 
         // Link UI elements of your layout xml into variables
         final Button goToCameraButton = root.findViewById(R.id.what_is_an_activity_camera_button);

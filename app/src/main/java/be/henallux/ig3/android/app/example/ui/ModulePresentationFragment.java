@@ -18,7 +18,7 @@ public abstract class ModulePresentationFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        View root = inflater.inflate(R.layout.fragment_module_presentation, container, false);
+        View root = inflater.inflate(R.layout.main_fragment_module_presentation, container, false);
 
         final TextView titleTextView = root.findViewById(R.id.module_presentation_title_text);
         final TextView descriptionTextView = root.findViewById(R.id.module_presentation_description_text);

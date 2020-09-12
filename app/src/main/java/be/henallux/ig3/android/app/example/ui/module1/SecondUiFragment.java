@@ -1,5 +1,6 @@
 package be.henallux.ig3.android.app.example.ui.module1;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,9 +9,9 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
-import androidx.navigation.Navigation;
 
 import be.henallux.ig3.android.app.example.R;
+import be.henallux.ig3.android.app.example.ui.MainActivity;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -63,7 +64,7 @@ public class SecondUiFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View root = inflater.inflate(R.layout.fragment_second_ui, container, false);
+        View root = inflater.inflate(R.layout.mod1_fragment_second_ui, container, false);
 
         final TextView nameTextView = root.findViewById(R.id.second_ui_name_value_text);
         final TextView ageTextView = root.findViewById(R.id.second_ui_age_value_text);
@@ -80,7 +81,10 @@ public class SecondUiFragment extends Fragment {
     }
 
     private void goToNextFragment(View view) {
-        Navigation.findNavController(view)
-                .navigate(R.id.action_SecondUiFragment_to_Mod1PresentationFragment);
+        Intent intent = new Intent(getContext(), MainActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+        //Navigation.findNavController(view)
+        //      .navigate(R.id.action_SecondUiFragment_to_Mod1PresentationFragment);
     }
 }

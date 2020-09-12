@@ -6,7 +6,7 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
     <fragment
-        android:id="@+id/nav_host_fragment"
+        android:id="@+id/lifecycle_testing_fragment"
         android:name="be.henallux.ig3.android.app.example.ui.module1.LifecycleTestingFragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
