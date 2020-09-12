@@ -26,7 +26,6 @@ public class ActivityLifecycleFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         View root = inflater.inflate(R.layout.fragment_activity_lifecycle, container, false);
 
         final Button goToLifecycleTestingActivityButton = root.findViewById(R.id.activity_lifecycle_go_to_testing_button);
@@ -38,6 +37,11 @@ public class ActivityLifecycleFragment extends Fragment {
         return root;
     }
 
+    /**
+     * An @{@link Intent} is a component that permits to start the next activity. If you need to pass
+     * arguments to the next activity, you can create a bundle and use the {@link Intent#putExtras(Bundle)}
+     * to pass it through the item.
+     */
     private void goToLifecycleTestingActivity() {
         Intent intent = new Intent(getContext(), LifecycleTestingActivity.class);
         startActivity(intent);

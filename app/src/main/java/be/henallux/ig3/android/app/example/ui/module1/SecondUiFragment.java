@@ -31,11 +31,15 @@ public class SecondUiFragment extends Fragment {
     }
 
     /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
+     * Use this factory method to create a bundle containing all needed arguments to create this fragment. <br/>
+     * To pass arguments between fragments, the bundle is the usual component. There is another
+     * mechanism called "safe-args", which is a bit safer than the bundle, but that is requiring
+     * other gradle dependencies and plugins to add into your project.<br/>
+     * For more information about safe-args, go to https://developer.android.com/guide/navigation/navigation-pass-data
      *
-     * @param name Parameter 1.
-     * @param mail Parameter 2.
+     * @param name Name of the user.
+     * @param age Age of the user
+     * @param mail Mail of the user.
      * @return A new bundle containing arguments for fragment SecondUiFragment.
      */
     static Bundle newArguments(String name, Integer age, String mail) {

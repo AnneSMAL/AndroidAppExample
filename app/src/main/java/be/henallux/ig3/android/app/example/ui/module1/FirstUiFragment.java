@@ -42,7 +42,9 @@ public class FirstUiFragment extends Fragment {
         toastButton.setOnClickListener(view -> displayHelloMessage());
         nextButton.setOnClickListener(view -> {
             checkFormErrors();
-            goToNextFragment(view);
+            if (!formContainsErrors()) {
+                goToNextFragment(view);
+            }
         });
 
         return root;
@@ -93,6 +95,18 @@ public class FirstUiFragment extends Fragment {
     }
 
     /**
+     * Checking if the EditText of the provided TextInputLayout contains any text
+     *
+     * @param textInputLayout UI Element in which we want to check whether or not there is a text
+     * @return true, if the textInputLayout contains any text; otherwise false.
+     */
+    private boolean isEditTextEmpty(TextInputLayout textInputLayout) {
+        return textInputLayout.getEditText() == null ||
+                textInputLayout.getEditText().getText() == null ||
+                textInputLayout.getEditText().getText().length() == 0;
+    }
+
+    /**
      * If textInputLayout editText value is null, throws a NullPointerException; <br/>
      * else, returns this value
      *
@@ -103,12 +117,11 @@ public class FirstUiFragment extends Fragment {
         return textInputLayout.getEditText().getText().toString();
     }
 
-    private boolean isEditTextEmpty(TextInputLayout textInputLayout) {
-        return textInputLayout.getEditText() == null ||
-                textInputLayout.getEditText().getText() == null ||
-                textInputLayout.getEditText().getText().length() == 0;
-    }
-
+    /**
+     * Checks all UI elements formats, to make sure all elements of the screen are valid
+     * before making any action. <br/>
+     * If an UI element has an error, this method will display it to the user
+     */
     private void checkFormErrors() {
         checkAndDisplayMandatoryFieldErrorFor(nameLayout);
 
@@ -119,18 +132,22 @@ public class FirstUiFragment extends Fragment {
         checkAndDisplayNotValidEmailFor(mailLayout);
     }
 
+    /**
+     * @return True if any of the UI elements contains an error; otherwise false
+     */
     private boolean formContainsErrors() {
         return nameLayout.getError() != null
                 || ageLayout.getError() != null
                 || mailLayout.getError() != null;
     }
 
+    /**
+     * Creates a bundle to pass values of UI elements to the next fragment @{@link SecondUiFragment}. <br/>
+     * Mechanism is pretty similar for activities : We will create a bundle that we will provide
+     * to the @{@link android.content.Intent} starting the next activity. <br/>
+     * You can find how to pass an argument to an activity at the following link https://stackoverflow.com/questions/3913592/start-an-activity-with-a-parameter
+     */
     private void goToNextFragment(View view) {
-        if (formContainsErrors()) {
-            Toast.makeText(getActivity(), "Error error !", Toast.LENGTH_SHORT).show();
-            return;
-        }
-
         Bundle secondUiArgs = SecondUiFragment.newArguments(
                 readValueOf(nameLayout),
                 Integer.valueOf(readValueOf(ageLayout)),
