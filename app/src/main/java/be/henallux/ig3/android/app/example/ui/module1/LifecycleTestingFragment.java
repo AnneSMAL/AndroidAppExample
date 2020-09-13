@@ -69,6 +69,15 @@ public class LifecycleTestingFragment extends Fragment {
     }
 
     /**
+     * Called when the activity's onCreate() method has returned.
+     */
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        Log.i(TAG, "Fragment - onActivityCreated()");
+    }
+
+    /**
      * Called when it's time for the fragment to draw its user interface for the first time. This
      * method is creating the view hierarchy of the fragment. <br/>
      * In this method, you should : <br/>
@@ -157,9 +166,13 @@ public class LifecycleTestingFragment extends Fragment {
     @Override
     public void onSaveInstanceState(@NonNull Bundle outState) {
         super.onSaveInstanceState(outState);
+        Log.i(TAG, "Fragment - onSaveInstanceState()");
         outState.putInt(SAVED_COUNTER, myCounter);
     }
 
+    /**
+     * Called when the view hierarchy associated with the fragment is being removed
+     */
     @Override
     public void onDestroyView() {
         super.onDestroyView();
@@ -172,6 +185,9 @@ public class LifecycleTestingFragment extends Fragment {
         Log.i(TAG, "Fragment - onDestroy()");
     }
 
+    /**
+     * Called when the fragment is being disassociated from the activity
+     */
     @Override
     public void onDetach() {
         super.onDetach();

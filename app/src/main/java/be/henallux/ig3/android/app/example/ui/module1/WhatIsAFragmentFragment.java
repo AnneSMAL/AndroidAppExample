@@ -12,7 +12,10 @@ import androidx.navigation.Navigation;
 import be.henallux.ig3.android.app.example.R;
 
 /**
- * A simple {@link Fragment} subclass. Go to the @{@link Fragment} class to check all the methods
+ * A fragment is a piece of UI, that could be reused in different activities. <br/>
+ * A fragment goes into a container, in the activity view. The activity is the parent of the
+ * fragment and so, the fragment is <u>always</u> associated to an activity. <br/>
+ * Go to the @{@link Fragment} class to check all the methods
  * you could override. You will learn more about it in the next screen.
  */
 public class WhatIsAFragmentFragment extends Fragment {

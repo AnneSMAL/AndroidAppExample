@@ -48,9 +48,14 @@
         layouts in the next chapter. \n \n \n
 
         <b><u>How to navigate through activities ?</u></b> \n
-        By using an <b>intent</b>. There are two types of them : \n
-        - <b>Explicit intent</b> : Start activities of your app \n
-        - <b>Implicit intent</b> : Start activities of other applications (Contacts, SMS, …) \n \n
+        By using an <b>intent</b>. An Intent describes an action to perform. You can either : \n
+        - Start an Activity (within your own app, or another app); \n
+        - Start a Service (background / foreground worker); \n
+        - Deliver a broadcast (delivered to all the apps); \n \n
+
+        There are two types of them : \n
+        - <b>Explicit intent</b> : The target app is specified; \n
+        - <b>Implicit intent</b> : A general action is specified (Take a picture, …) \n \n
 
         Go to the <i>WelcomeActivity</i> to discover how to create an explicit intent. \n
         For the implicit intent, click on the next button and go to the code to check the differences between
