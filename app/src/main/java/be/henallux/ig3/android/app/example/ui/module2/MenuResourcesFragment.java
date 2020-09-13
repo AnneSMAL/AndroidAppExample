@@ -1,4 +1,4 @@
-package be.henallux.ig3.android.app.example.ui.module3;
+package be.henallux.ig3.android.app.example.ui.module2;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,9 +13,9 @@ import be.henallux.ig3.android.app.example.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class MipMapResourcesFragment extends Fragment {
+public class MenuResourcesFragment extends Fragment {
 
-    public MipMapResourcesFragment() {
+    public MenuResourcesFragment() {
         // Required empty public constructor
     }
 
@@ -24,6 +24,6 @@ public class MipMapResourcesFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.mod3_fragment_mip_map_resources, container, false);
+        return inflater.inflate(R.layout.mod2_fragment_menu_resources, container, false);
     }
 }

@@ -2,8 +2,8 @@
     <string name="app_name">Android App Example</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">IG3 - Développement mobile</string>
-    <string name="nav_header_subtitle">Anne SMAL &amp; Lisa TRAPLETTI</string>
+    <string name="nav_header_title">IG3 - Mobile Development</string>
+    <string name="nav_header_subtitle" translatable="false">Anne SMAL &amp; Lisa TRAPLETTI</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
@@ -43,19 +43,19 @@
         - A layout; \n
         - To declare it in the app\'s manifest (AndroidManifest.xml); \n \n
 
-        The <b>Java class</b> represents the <i>business</i> part of an activity. \n
-        The <b>layout</b> represents its view part, written in XML. You will have more details about
+        The <b>Java class</b> represents the <b>layout</b> part of an activity. \n
+        The <b><u>How to navigate through activities ?</u></b> represents its view part, written in XML. You will have more details about
         layouts in the next chapter. \n \n \n
 
-        <b><u>How to navigate through activities ?</u></b> \n
-        By using an <b>intent</b>. An Intent describes an action to perform. You can either : \n
+        <b>intent</b> \n
+        By using an <b>Explicit intent</b>. An Intent describes an action to perform. You can either : \n
         - Start an Activity (within your own app, or another app); \n
         - Start a Service (background / foreground worker); \n
         - Deliver a broadcast (delivered to all the apps); \n \n
 
         There are two types of them : \n
-        - <b>Explicit intent</b> : The target app is specified; \n
-        - <b>Implicit intent</b> : A general action is specified (Take a picture, …) \n \n
+        - <b>Implicit intent</b> : The target app is specified; \n
+        - <i>business</i> : A general action is specified (Take a picture, …) \n \n
 
         Go to the <i>WelcomeActivity</i> to discover how to create an explicit intent. \n
         For the implicit intent, click on the next button and go to the code to check the differences between
@@ -119,6 +119,7 @@
     </string>
 
 
+    <string name="module_1_my_first_ui">My first UI</string>
     <string name="module_1_first_ui_name">Name</string>
     <string name="module_1_first_ui_age">Age</string>
     <string name="module_1_first_ui_mail">Mail</string>
@@ -135,36 +136,83 @@
     <string name="module_1_first_ui_invalid_format">Invalid format</string>
 
 
-    <!-- Module 2 Layouts -->
-    <string name="module_2_title">Layouts</string>
-    <string name="module_2_description">Layouts are XML files \"assembling\" all the UI components together.
+    <!-- Module 2 Resources -->
+    <string name="module_2_title">Resources</string>
+    <string name="module_2_description">Layouts, images, colors, navigation, strings, … Resources
+        are a very important part of the Android Development. In this module, you will learn
+        what is the role of each resource type, and how to use them efficiently in your app.
+    </string>
+
+    <string name="module_2_resources_types_title">Resources Types</string>
+
+    <string name="module_2_resources_organisation_by_android_studio">Additional files and <b>static
+        content</b> that your code uses, such as bitmaps, layout definitions, ui strings, … \n
+        You should always externalize app resources such as images and strings from your code,
+        so that you can maintain them independently (In any case, Android Studio will warn you to do it). \n \n
+
+        <b><u>Resources for specific cases</u></b> \n
+        If you need alternative resources for specific <b>device configurations</b>, you can provide those
+        by grouping them in specially-named resource directories. At runtime, Android uses the
+        appropriate resource based on the current configuration. \n \n
+
+        For example, you might want to provide a different UI layout depending on the screen
+        size or different strings depending on the language setting. \n \n
+
+        Under the folder <b>res</b>, you can find the following hierarchy, that you need to respect :
+    </string>
+    <string name="module_2_resource_type_drawable" translatable="false">Drawable</string>
+    <string name="module_2_resource_type_layout" translatable="false">Layout</string>
+    <string name="module_2_resource_type_menu" translatable="false">Menu</string>
+    <string name="module_2_resource_type_mipmap" translatable="false">Mipmap</string>
+    <string name="module_2_resource_type_navigation" translatable="false">Navigation</string>
+    <string name="module_2_resource_type_values" translatable="false">Values</string>
+
+    <!-- Module 3 : Drawables & MipMap -->
+    <string name="module_2_drawables_what_is_it">Drawables are <b>things that can be drawn</b>. Typically,
+        they can be used as images, backgrounds, … \n
+        Drawables can be : \n
+        - Raw types (JPG, PNG, …); \n
+        - Vector (XML, SVG, …); \n \n
+
+        <b><u>What about mipmaps ?</u></b> \n
+        Mipmap are drawable files used for different <b>launcher icon densities</b>. Mipmap will then, just contain
+        your app icons, while drawables will contain all the rest. \n \n
+
+        <b><u>Pre-scaling</u></b> \n
+        When using a bitmap, try to pre-scale them when it is possible. You can do that online or with
+        a plugin integrated to Android Studio. Automatically, Android will choose the right size of image
+        following the device configurations, to avoid blurry images. \n \n
+    </string>
+
+    <string name="module_2_drawables_references">To create your drawables, you can use following links : \n
+        <u>https://material.io/resources/icons/?style=baseline</u> \n
+        <u>https://www.pexels.com</u> \n
+    </string>
+
+    <string name="module_2_glide">Glide</string>
+    <string name="module_2_what_is_glide"><b>Glide</b> is an open source media management and image loading framework that will considerably
+        help you to handle images during your development. It takes care of operations such as : \n
+        - Crop, resize, …; \n
+        - Download images from the web; \n
+        - Caching;
+        - Dynamic stuffs; \n \n
+
+        Do not try to do this with Bitmaps, BitmapFactory, … to mange your images, it doesn\'t worth it.
+        Use Glide. \n \n
+        You can find the full documentation of the framework here : https://bumptech.github.io/glide/
+        and on GitHub : https://github.com/bumptech/glide
+    </string>
+
+
+    <!-- Module 3 : Layouts -->
+    <string name="module_4_title">Layouts</string>
+    <string name="module_4_description">Layouts are XML files \"assembling\" all the UI components together.
         Each activity and each fragment will, at least, be linked to one layout. \n
         In this chapter, you will learn what is a layout, how to create one and how to link it to
         an activity, a fragment, or another UI component.
     </string>
 
     <string name="module_2_layout_structure_title">Layout Structure</string>
-
-
-    <!-- Module 3 Resources -->
-    <string name="module_3_title">Resources</string>
-    <string name="module_3_description">Layouts, images, colors, navigation, strings, … Resources
-        are a very important part of the Android Development. In this module, you will learn
-        what is the role of each resource type, and how to use them efficiently in your app.
-    </string>
-
-    <string name="module_3_resources_types_title">Resources Types</string>
-
-    <string name="module_3_resources_organisation_by_android_studio">Android is requiring a specific
-        structure in its projects, and this includes the <b>resources</b> part as well.
-        Under the folder <b>res</b>, you can find the following sub-folders :
-    </string>
-    <string name="module_3_resource_type_drawable" translatable="false">Drawable</string>
-    <string name="module_3_resource_type_layout" translatable="false">Layout</string>
-    <string name="module_3_resource_type_menu" translatable="false">Menu</string>
-    <string name="module_3_resource_type_mipmap" translatable="false">Mipmap</string>
-    <string name="module_3_resource_type_navigation" translatable="false">Navigation</string>
-    <string name="module_3_resource_type_values" translatable="false">Values</string>
 
     <string name="next">Next</string>
     <string name="previous">Previous</string>
@@ -173,4 +221,9 @@
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    <!-- Image content Description -->
+    <string name="glide_logo_url">https://raw.githubusercontent.com/bumptech/glide/master/static/glide_logo.png</string>
+    <string name="img_source_mod2_drawables_density" translatable="false">Source :
+        https://cdn-images-1.medium.com/max/1600/1*Ii4mMCS3QjKDQOML8y7TqA.png</string>
+    <string name="img_source_android_developer" translatable="false">Source : android.developer.com</string>
 </resources>

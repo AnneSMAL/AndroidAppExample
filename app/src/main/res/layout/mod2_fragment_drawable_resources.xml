@@ -9,7 +9,7 @@
     android:layout_marginRight="@dimen/activity_horizontal_margin"
     android:layout_marginEnd="@dimen/activity_horizontal_margin"
     android:layout_marginBottom="@dimen/activity_vertical_margin"
-    tools:context=".ui.module1.ActivityLifecycleFragment">
+    tools:context=".ui.module2.DrawableResourcesFragment">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -27,57 +27,33 @@
             android:paddingBottom="@dimen/container_scroll_bottom_padding">
 
             <TextView
-                android:id="@+id/activity_lifecycle_description_text"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/text_default_margin"
-                android:text="@string/module_1_every_activity_has_its_lifecycle"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/text_size_body_2"
                 android:textColor="@color/textBody"
-                android:textSize="@dimen/text_size_body_2" />
+                android:text="@string/module_2_drawables_what_is_it" />
 
             <ImageView
-                android:id="@+id/activity_lifecycle_image"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
-                android:src="@drawable/module_1_activity_lifecycle"
-                android:contentDescription="@string/img_source_android_developer" />
+                android:layout_marginTop="@dimen/text_default_margin"
+                android:contentDescription="@string/img_source_mod2_drawables_density"
+                android:src="@drawable/module_3_drawables_density" />
 
             <TextView
-                android:id="@+id/activity_lifecycle_go_to_testing_text"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/container_next_section_vertical_margin"
-                android:layout_marginBottom="@dimen/text_default_margin"
-                android:text="@string/module_1_go_to_lifecycle_testing_activity"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/text_default_margin"
                 android:textSize="@dimen/text_size_body_2"
-                android:textColor="@color/textBody" />
-
-            <Button
-                android:id="@+id/activity_lifecycle_go_to_testing_button"
-                style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:background="@color/colorAccent"
-                android:padding="4dp"
-                android:text="@string/module_1_test_lifecycle"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/activity_lifecycle_fragment_lifecycle_text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/container_next_section_vertical_margin"
-                android:text="@string/module_1_fragment_lifecycle"
                 android:textColor="@color/textBody"
-                android:textSize="@dimen/text_size_body_2" />
+                android:text="@string/module_2_drawables_references" />
 
         </LinearLayout>
     </ScrollView>
 
     <Button
-        android:id="@+id/activity_lifecycle_next_button"
+        android:id="@+id/res_drawables_next_button"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

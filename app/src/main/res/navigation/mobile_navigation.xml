@@ -17,9 +17,9 @@
     </fragment>
 
     <fragment
-        android:id="@+id/mod2PresentationFragment"
-        android:name="be.henallux.ig3.android.app.example.ui.module2.LayoutsPresentationFragment"
-        android:label="@string/menu_module_2"
+        android:id="@+id/mod3PresentationFragment"
+        android:name="be.henallux.ig3.android.app.example.ui.module3.LayoutsPresentationFragment"
+        android:label="@string/menu_module_3"
         tools:layout="@layout/main_fragment_module_presentation">
         <action
             android:id="@+id/action_PresentationFragment_to_layoutStructureFragment"
@@ -27,18 +27,18 @@
     </fragment>
     <fragment
         android:id="@+id/nav_layout_structure"
-        android:name="be.henallux.ig3.android.app.example.ui.module2.LayoutStructureFragment"
+        android:name="be.henallux.ig3.android.app.example.ui.module3.LayoutStructureFragment"
         android:label="@string/module_2_layout_structure_title"
         tools:layout="@layout/mod2_fragment_layout_structure" />
 
     <fragment
-        android:id="@+id/mod3PresentationFragment"
-        android:name="be.henallux.ig3.android.app.example.ui.module3.ResourcesPresentationFragment"
-        android:label="@string/menu_module_3"
+        android:id="@+id/mod2PresentationFragment"
+        android:name="be.henallux.ig3.android.app.example.ui.module2.ResourcesPresentationFragment"
+        android:label="@string/menu_module_2"
         tools:layout="@layout/main_fragment_module_presentation">
         <action
             android:id="@+id/action_PresentationFragment_to_ResourcesTypesFragment"
-            app:destination="@id/mod3_nav_graph" />
+            app:destination="@id/mod2_nav_graph" />
     </fragment>
     <navigation
         android:id="@+id/mod1_nav_graph"
@@ -73,7 +73,7 @@
         <fragment
             android:id="@+id/nav_mod1_first_ui"
             android:name="be.henallux.ig3.android.app.example.ui.module1.FirstUiFragment"
-            android:label="fragment_first_ui"
+            android:label="@string/module_1_my_first_ui"
             tools:layout="@layout/mod1_fragment_first_ui">
             <action
                 android:id="@+id/action_FirstUiFragment_to_SecondUiFragment"
@@ -82,7 +82,7 @@
         <fragment
             android:id="@+id/nav_mod1_second_ui"
             android:name="be.henallux.ig3.android.app.example.ui.module1.SecondUiFragment"
-            android:label="fragment_second_ui"
+            android:label="@string/module_1_my_first_ui"
             tools:layout="@layout/mod1_fragment_second_ui">
             <action
                 android:id="@+id/action_SecondUiFragment_to_Mod1PresentationFragment"
@@ -101,22 +101,19 @@
         </fragment>
     </navigation>
     <navigation
-        android:id="@+id/mod3_nav_graph"
+        android:id="@+id/mod2_nav_graph"
         app:startDestination="@id/resourcesTypesFragment">
         <fragment
             android:id="@+id/resourcesTypesFragment"
-            android:name="be.henallux.ig3.android.app.example.ui.module3.ResourcesTypesFragment"
-            android:label="@string/module_3_resources_types_title"
-            tools:layout="@layout/mod3_fragment_resources_types">
+            android:name="be.henallux.ig3.android.app.example.ui.module2.ResourcesTypesFragment"
+            android:label="@string/module_2_resources_types_title"
+            tools:layout="@layout/mod2_fragment_resources_types">
             <action
                 android:id="@+id/action_ResourcesTypesFragment_to_DrawableResourcesFragment"
                 app:destination="@id/drawableResourcesFragment" />
             <action
                 android:id="@+id/action_ResourcesTypesFragment_to_menuResourcesFragment"
                 app:destination="@id/menuResourcesFragment" />
-            <action
-                android:id="@+id/action_ResourcesTypesFragment_to_mipMapResourcesFragment"
-                app:destination="@id/mipMapResourcesFragment" />
             <action
                 android:id="@+id/action_ResourcesTypesFragment_to_navigationResourcesFragment"
                 app:destination="@id/navigationResourcesFragment" />
@@ -125,32 +122,42 @@
                 app:destination="@id/valuesResourcesFragment" />
             <action
                 android:id="@+id/action_ResourcesTypesFragment_to_LayoutsPresentationFragment"
-                app:destination="@id/mod2PresentationFragment" />
+                app:destination="@id/mod3PresentationFragment" />
         </fragment>
         <fragment
             android:id="@+id/drawableResourcesFragment"
-            android:name="be.henallux.ig3.android.app.example.ui.module3.DrawableResourcesFragment"
-            android:label="mod3_fragment_drawable_resources"
-            tools:layout="@layout/mod3_fragment_drawable_resources" />
+            android:name="be.henallux.ig3.android.app.example.ui.module2.DrawableResourcesFragment"
+            android:label="@string/module_2_resource_type_drawable"
+            tools:layout="@layout/mod2_fragment_drawable_resources">
+            <action
+                android:id="@+id/action_drawableResourcesFragment_to_drawableGlideFragment"
+                app:destination="@id/drawableGlideFragment" />
+        </fragment>
         <fragment
             android:id="@+id/menuResourcesFragment"
-            android:name="be.henallux.ig3.android.app.example.ui.module3.MenuResourcesFragment"
-            android:label="mod3_fragment_menu_resources"
-            tools:layout="@layout/mod3_fragment_menu_resources" />
-        <fragment
-            android:id="@+id/mipMapResourcesFragment"
-            android:name="be.henallux.ig3.android.app.example.ui.module3.MipMapResourcesFragment"
-            android:label="mod3_fragment_mip_map_resources"
-            tools:layout="@layout/mod3_fragment_mip_map_resources" />
+            android:name="be.henallux.ig3.android.app.example.ui.module2.MenuResourcesFragment"
+            android:label="@string/module_2_resource_type_menu"
+            tools:layout="@layout/mod2_fragment_menu_resources" />
         <fragment
             android:id="@+id/navigationResourcesFragment"
-            android:name="be.henallux.ig3.android.app.example.ui.module3.NavigationResourcesFragment"
-            android:label="mod3_fragment_navigation_resources"
-            tools:layout="@layout/mod3_fragment_navigation_resources" />
+            android:name="be.henallux.ig3.android.app.example.ui.module2.NavigationResourcesFragment"
+            android:label="@string/module_2_resource_type_navigation"
+            tools:layout="@layout/mod2_fragment_navigation_resources" />
         <fragment
             android:id="@+id/valuesResourcesFragment"
-            android:name="be.henallux.ig3.android.app.example.ui.module3.ValuesResourcesFragment"
-            android:label="mod3_fragment_values_resources"
-            tools:layout="@layout/mod3_fragment_values_resources" />
+            android:name="be.henallux.ig3.android.app.example.ui.module2.ValuesResourcesFragment"
+            android:label="@string/module_2_resource_type_values"
+            tools:layout="@layout/mod2_fragment_values_resources" />
+        <fragment
+            android:id="@+id/drawableGlideFragment"
+            android:name="be.henallux.ig3.android.app.example.ui.module2.DrawableGlideFragment"
+            android:label="@string/module_2_glide"
+            tools:layout="@layout/mod2_fragment_drawable_glide">
+            <action
+                android:id="@+id/action_drawableGlideFragment_to_resourcesTypesFragment"
+                app:destination="@id/resourcesTypesFragment"
+                app:popUpTo="@id/resourcesTypesFragment"
+                app:popUpToInclusive="true" />
+        </fragment>
     </navigation>
 </navigation>

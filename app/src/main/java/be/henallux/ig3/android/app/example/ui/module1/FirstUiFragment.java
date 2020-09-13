@@ -30,6 +30,8 @@ public class FirstUiFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+        // Inflating our view manually
         View root = inflater.inflate(R.layout.mod1_fragment_first_ui, container, false);
 
         nameLayout = root.findViewById(R.id.first_ui_name_text_input_layout);

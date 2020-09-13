@@ -1,4 +1,4 @@
-package be.henallux.ig3.android.app.example.ui.module3;
+package be.henallux.ig3.android.app.example.ui.module2;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -22,7 +22,7 @@ public class ResourcesTypesFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View root = inflater.inflate(R.layout.mod3_fragment_resources_types, container, false);
+        View root = inflater.inflate(R.layout.mod2_fragment_resources_types, container, false);
 
         final Button drawablesButton = root.findViewById(R.id.resources_types_drawable_button);
         final Button layoutsButton = root.findViewById(R.id.resources_types_layout_button);
@@ -34,7 +34,7 @@ public class ResourcesTypesFragment extends Fragment {
         drawablesButton.setOnClickListener(view -> goToFragment(view, R.id.action_ResourcesTypesFragment_to_DrawableResourcesFragment));
         layoutsButton.setOnClickListener(view -> goToFragment(view, R.id.action_ResourcesTypesFragment_to_LayoutsPresentationFragment));
         menuButton.setOnClickListener(view -> goToFragment(view, R.id.action_ResourcesTypesFragment_to_menuResourcesFragment));
-        mipmapButton.setOnClickListener(view -> goToFragment(view, R.id.action_ResourcesTypesFragment_to_mipMapResourcesFragment));
+        mipmapButton.setOnClickListener(view -> goToFragment(view, R.id.action_ResourcesTypesFragment_to_DrawableResourcesFragment));
         navigationButton.setOnClickListener(view -> goToFragment(view, R.id.action_ResourcesTypesFragment_to_navigationResourcesFragment));
         valuesButton.setOnClickListener(view -> goToFragment(view, R.id.action_ResourcesTypesFragment_to_valuesResourcesFragment));
 
