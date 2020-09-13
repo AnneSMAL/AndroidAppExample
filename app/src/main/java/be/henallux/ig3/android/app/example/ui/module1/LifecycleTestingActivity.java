@@ -12,17 +12,18 @@ import be.henallux.ig3.android.app.example.R;
  * Activity used to demonstrate Android Activity Lifecycle. Go to the Logcat section in your IDE,
  * search for LifecycleTestingAct logs, and play with your emulator to understand the complete
  * lifecycle of an activity. <br/>
- * Go to the @{@link LifecycleTestingFragment} to do exactly the same exercice for a fragment.
+ *
+ * Go to the @{@link LifecycleTestingFragment} to do exactly the same exercise for a fragment.
  */
 public class LifecycleTestingActivity extends AppCompatActivity {
     private static final String TAG = "LifecycleTesting";
 
     /**
      * Called first time the activity starts. The activity is created and initialised. <br/>
-     * In this method, you can : <br/>
+     * In this method, you have to : <br/>
      * - Inflate the UI; <br/>
      * - Initialize variables (classical ones & UI elements coming from layout); <br/>
-     * - Do whatever happens <u>once</u> during the activity lifetime;
+     * - Do whatever happens <u>once</u> during the activity lifetime (Listeners, ...);
      *
      * @param savedInstanceState Bundle containing all data of the activity saved in case Android
      *                           silently killed our app. This bundle will help us to recreate the

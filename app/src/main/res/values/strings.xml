@@ -77,16 +77,17 @@
     <string name="module_1_test_lifecycle">Test lifecycle</string>
 
     <string name="title_activity_lifecycle_testing">LifecycleTestingActivity</string>
-    <string name="module_1_lifecycle_testing_description">Time to play with the emulator ! \n
-        Afterwards, do not forget to analyse what happened in your logs. \n \n
+    <string name="module_1_lifecycle_testing_description">
         Mastering the lifecycle of an activity will considerably help you to avoid a lot of bugs.
-        Some questions you can try to answer : What is happening if \n
+        So take your time to analyze the logs, the code, play with the emulator, …
+        And ask you the following questions : What would happen if \n
 
-        - I\'m initializing my variable in onStart() instead of onCreate() ? \n
+        - I\'m initializing my counter in onStart() instead of onCreate() ? \n
         - I\'m leaving the application ? \n
         - I\'m rotating the phone ? \n
         - Android is killing my app to free some resources for other apps ? (Yes, … it does) \n
     </string>
+    <string name="module_1_lifecycle_testing_my_counter">My counter : %1$d</string>
 
 
     <string name="module_1_what_is_a_fragment_title">What is a fragment ?</string>
@@ -163,14 +164,8 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
     <string name="done">Done</string>
+    <string name="add">Add</string>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="title_activity_module">ModuleActivity</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
 </resources>
