@@ -9,7 +9,7 @@
     android:layout_marginRight="@dimen/activity_horizontal_margin"
     android:layout_marginEnd="@dimen/activity_horizontal_margin"
     android:layout_marginBottom="@dimen/activity_vertical_margin"
-    tools:context=".ui.module2.LayoutStructureFragment">
+    tools:context=".ui.module2.LayoutViewBindingFragment">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -27,45 +27,29 @@
             android:paddingBottom="@dimen/container_scroll_bottom_padding">
 
             <TextView
+                android:id="@+id/res_layouts_view_binding_text"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:textSize="@dimen/text_size_body_2"
                 android:textColor="@color/textBody"
-                android:text="@string/module_2_layouts_what_is_it" />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:adjustViewBounds="true"
-                android:layout_marginTop="@dimen/text_default_margin"
-                android:contentDescription="@string/img_source_lisa_trapletti"
-                android:src="@drawable/module_2_layouts_structure" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="@dimen/container_next_section_vertical_margin"
-                android:textSize="@dimen/text_size_body_2"
-                android:textColor="@color/textBody"
-                android:text="@string/module_2_layouts_android_studio_palette" />
+                android:text="@string/module_2_layouts_view_binding_what_is_it" />
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/res_layouts_example_text_input_layout"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/text_default_margin">
+                android:layout_height="wrap_content">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/res_layouts_example_edit_text"
+                    android:id="@+id/res_layouts_view_binding_example_edit_text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/write_anything" />
             </com.google.android.material.textfield.TextInputLayout>
+
         </LinearLayout>
     </ScrollView>
 
     <Button
-        android:id="@+id/res_layouts_next_button"
+        android:id="@+id/res_layouts_view_binding_next_button"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

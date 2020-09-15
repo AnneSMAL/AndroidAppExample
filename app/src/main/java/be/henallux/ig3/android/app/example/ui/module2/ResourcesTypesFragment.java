@@ -32,7 +32,7 @@ public class ResourcesTypesFragment extends Fragment {
         final Button valuesButton = root.findViewById(R.id.resources_types_values_button);
 
         drawablesButton.setOnClickListener(view -> goToFragment(view, R.id.action_ResourcesTypesFragment_to_DrawableResourcesFragment));
-        layoutsButton.setOnClickListener(view -> goToFragment(view, R.id.action_ResourcesTypesFragment_to_LayoutsPresentationFragment));
+        layoutsButton.setOnClickListener(view -> goToFragment(view, R.id.action_resourcesTypesFragment_to_layoutStructureFragment));
         menuButton.setOnClickListener(view -> goToFragment(view, R.id.action_ResourcesTypesFragment_to_menuResourcesFragment));
         mipmapButton.setOnClickListener(view -> goToFragment(view, R.id.action_ResourcesTypesFragment_to_DrawableResourcesFragment));
         navigationButton.setOnClickListener(view -> goToFragment(view, R.id.action_ResourcesTypesFragment_to_navigationResourcesFragment));
