@@ -142,7 +142,16 @@
             android:id="@+id/navigationResourcesFragment"
             android:name="be.henallux.ig3.android.app.example.ui.module2.NavigationResourcesFragment"
             android:label="@string/module_2_resource_type_navigation"
-            tools:layout="@layout/mod2_fragment_navigation_resources" />
+            tools:layout="@layout/mod2_fragment_navigation_resources">
+            <action
+                android:id="@+id/action_navigationResourcesFragment_to_resourcesTypesFragment"
+                app:destination="@id/resourcesTypesFragment"
+                app:popUpTo="@id/resourcesTypesFragment"
+                app:popUpToInclusive="true" />
+            <argument
+                android:name="myFirstSafeArg"
+                app:argType="string" />
+        </fragment>
         <fragment
             android:id="@+id/valuesResourcesFragment"
             android:name="be.henallux.ig3.android.app.example.ui.module2.ValuesResourcesFragment"

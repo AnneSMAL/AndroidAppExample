@@ -208,7 +208,7 @@
     </string>
 
 
-    <!-- Module 3 : Layouts -->
+    <!-- Module 2 : Layouts -->
     <string name="module_2_layouts_what_is_it">The layout is a set of XML tags, that defines the
         structure for a user interface in your app that can either be linked to an activity, a fragment, …
         All elements in the layout are built using a hierarchy of View and ViewGroup objects. \n \n
@@ -248,6 +248,28 @@
     <string name="module_2_layout_structure_title">Layout Structure</string>
     <string name="module_2_layout_view_binding_title">View Binding</string>
 
+    <!-- Module 2 : Navigation -->
+    <string name="module_2_navigation_graph">A <b>navigation graph</b> is a XML resource, containing all
+        the navigation interactions between fragments for an activity. Each activity will have its own
+        navigation graph (if containing multiple UI). \n
+        You can create your navigation graph using the Android Studio's visual tool. \n \n
+
+        <b><u>NavigationHostFragment</u></b> \n
+        Fragment of the Navigation library, provided by Android. This fragment acts like a host for each
+        fragment of the navigation graph. \n
+        As the user moves between destinations within the navigation graph, this host swaps the fragments
+        in and out as necessary and automatically creates appropriate back stack. \n
+        To see an example, go and check the <b>main_content.xml</b> layout and its corresponding
+        class. \n \n
+
+        <b><u>Arguments between fragments</u></b> \n
+        Instead of creating a bundle to pass arguments between your fragments, you can use the provided
+        navigation graph mechanism called <b>Safe-Args</b>. \n
+        Go to the class and the navigation graph to check how it\'s working.
+    </string>
+    <string name="module_2_navigation_getting_first_safe_arg">Hello ! This is your first Safe-Arg !</string>
+
+    <!-- To update -->
     <string name="module_4_title">Layouts</string>
     <string name="module_4_description">Layouts are XML files \"assembling\" all the UI components together.
         Each activity and each fragment will, at least, be linked to one layout. \n
@@ -259,6 +281,7 @@
     <string name="previous">Previous</string>
     <string name="done">Done</string>
     <string name="add">Add</string>
+    <string name="write_anything">Write anything</string>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
@@ -268,6 +291,5 @@
         https://cdn-images-1.medium.com/max/1600/1*Ii4mMCS3QjKDQOML8y7TqA.png</string>
     <string name="img_source_android_developer" translatable="false">Source : android.developer.com</string>
     <string name="img_source_lisa_trapletti" translatable="false">Lisa Trapletti Creation</string>
-    <string name="write_anything">Write anything</string>
 
 </resources>
