@@ -198,7 +198,7 @@
         help you to handle images during your development. It takes care of operations such as : \n
         - Crop, resize, …; \n
         - Download images from the web; \n
-        - Caching;
+        - Caching; \n
         - Dynamic stuffs; \n \n
 
         Do not try to do this with Bitmaps, BitmapFactory, … to mange your images, it doesn\'t worth it.
@@ -252,7 +252,7 @@
     <string name="module_2_navigation_graph">A <b>navigation graph</b> is a XML resource, containing all
         the navigation interactions between fragments for an activity. Each activity will have its own
         navigation graph (if containing multiple UI). \n
-        You can create your navigation graph using the Android Studio's visual tool. \n \n
+        You can create your navigation graph using the Android Studio\'s visual tool. \n \n
 
         <b><u>NavigationHostFragment</u></b> \n
         Fragment of the Navigation library, provided by Android. This fragment acts like a host for each
@@ -264,10 +264,36 @@
 
         <b><u>Arguments between fragments</u></b> \n
         Instead of creating a bundle to pass arguments between your fragments, you can use the provided
-        navigation graph mechanism called <b>Safe-Args</b>. \n
+        navigation graph mechanism called <b>Safe Args</b>. \n
         Go to the class and the navigation graph to check how it\'s working.
     </string>
     <string name="module_2_navigation_getting_first_safe_arg">Hello ! This is your first Safe-Arg !</string>
+
+    <!-- Module 2 : Menus -->
+    <string name="module_2_menus_what_is_it">Menus are a common user interface component in many types of applications. \n \n
+        For all menu types, Android provides a standard XML format to define menu items. Instead
+        of building a menu in your activity\'s code, you should define a menu and all its items
+        in an XML menu resource. You can then inflate the menu resource (load it as a Menu object)
+        in your activity or fragment. \n \n
+        Using a menu resource is a good practice for a few reasons: \n
+        - It\'s easier to visualize the menu structure in XML; \n
+        - It separates the content for the menu from your application\'s behavioral code; \n
+        - It allows you to create alternative menu configurations for different platform versions,
+        screen sizes, and other configurations by leveraging the app resources framework. \n \n
+
+        <b><u>Menu Types</u></b> \n
+        In Android, you can find different types of menus : \n
+        - <u>Options menu and app bar</u> : Primary collection of menu items for an activity.
+        It\'s where you should place actions that have a global impact on the app, such as "Search",
+        "Compose email," and "Settings." \n
+        - <u>Context menu and contextual action mode</u> : Floating menu that appears when the user
+        performs a long-click on an element \n
+        - <u>Popup menu</u> : Displays a list of items in a vertical list that\'s anchored to the
+        view that invoked the menu. It\'s good for providing an overflow of actions that relate
+        to specific content or to provide options for a second part of a command. \n
+    </string>
+    <string name="menu_try_this">Try this</string>
+    <string name="mod2_menus_testing_menu">See ? Possible to make actions from menu</string>
 
     <!-- To update -->
     <string name="module_4_title">Layouts</string>

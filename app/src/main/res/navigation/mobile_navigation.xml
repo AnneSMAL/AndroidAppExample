@@ -137,7 +137,11 @@
             android:id="@+id/menuResourcesFragment"
             android:name="be.henallux.ig3.android.app.example.ui.module2.MenuResourcesFragment"
             android:label="@string/module_2_resource_type_menu"
-            tools:layout="@layout/mod2_fragment_menu_resources" />
+            tools:layout="@layout/mod2_fragment_menu_resources">
+            <action
+                android:id="@+id/action_menuResourcesFragment_to_resourcesTypesFragment"
+                app:destination="@id/resourcesTypesFragment" />
+        </fragment>
         <fragment
             android:id="@+id/navigationResourcesFragment"
             android:name="be.henallux.ig3.android.app.example.ui.module2.NavigationResourcesFragment"
