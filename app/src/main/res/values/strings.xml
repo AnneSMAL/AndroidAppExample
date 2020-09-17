@@ -292,8 +292,35 @@
         view that invoked the menu. It\'s good for providing an overflow of actions that relate
         to specific content or to provide options for a second part of a command. \n
     </string>
-    <string name="menu_try_this">Try this</string>
-    <string name="mod2_menus_testing_menu">See ? Possible to make actions from menu</string>
+    <string name="module_2_menu_try_this">Try this</string>
+    <string name="module_2_menus_testing_menu">See ? Possible to make actions from menu</string>
+
+    <!-- Module 2 : Values -->
+    <string name="module_2_values_what_is_it">XML files that contain <b>simple values</b>, such as strings,
+        integers, and colors. \n
+        Whereas XML resource files in other res/ subdirectories define a single resource based on
+        the XML filename, files in the values/ directory describe multiple resources. For a file in
+        this directory, each child of the <b>resources</b> element defines a single resource. For example,
+        a <b>string</b> element creates a R.string resource and a <b>color</b> element creates a
+        R.color resource. \n \n
+
+        <b><u>Alternative resources</u></b> \n
+        Just like any other resources, you can provide alternative resources using qualifiers
+        following device specifications (New language for strings, new dimensions for bigger screen
+        sizes, …) \n \n
+
+        <b><u>Values Types</u></b> \n
+        Because each resource is defined with its own XML element, you can name the file whatever
+        you want and place different resource types in one file. However, for clarity, we generally
+        place unique resource types in different files, just like this : \n
+        - arrays.xml for resource arrays (typed arrays); \n
+        - colors.xml for color values; \n
+        - dimens.xml for dimension values; \n
+        - strings.xml for string values; \n
+        - styles.xml for styles; \n \n
+
+        For more resource types, go and check <u>https://developer.android.com/guide/topics/resources/more-resources</u>
+    </string>
 
     <!-- To update -->
     <string name="module_4_title">Layouts</string>

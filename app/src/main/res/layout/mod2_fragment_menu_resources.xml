@@ -38,7 +38,7 @@
     </ScrollView>
 
     <Button
-        android:id="@+id/res_navigation_done_button"
+        android:id="@+id/res_menu_done_button"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

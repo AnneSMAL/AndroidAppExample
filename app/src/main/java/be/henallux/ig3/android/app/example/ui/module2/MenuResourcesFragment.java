@@ -41,7 +41,7 @@ public class MenuResourcesFragment extends Fragment {
         binding = Mod2FragmentMenuResourcesBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        binding.resNavigationDoneButton.setOnClickListener(view ->
+        binding.resMenuDoneButton.setOnClickListener(view ->
                 Navigation.findNavController(view)
                         .navigate(MenuResourcesFragmentDirections.actionMenuResourcesFragmentToResourcesTypesFragment()));
 
@@ -75,7 +75,7 @@ public class MenuResourcesFragment extends Fragment {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.options_try_this_menu) {
-            Toast.makeText(getActivity(), getString(R.string.mod2_menus_testing_menu), Toast.LENGTH_SHORT).show();
+            Toast.makeText(getActivity(), getString(R.string.module_2_menus_testing_menu), Toast.LENGTH_SHORT).show();
             return true;
         }
 

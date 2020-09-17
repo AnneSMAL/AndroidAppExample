@@ -3,5 +3,5 @@
 
     <item
         android:id="@+id/options_try_this_menu"
-        android:title="@string/menu_try_this" />
+        android:title="@string/module_2_menu_try_this" />
 </menu>

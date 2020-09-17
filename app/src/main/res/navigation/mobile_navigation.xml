@@ -140,7 +140,9 @@
             tools:layout="@layout/mod2_fragment_menu_resources">
             <action
                 android:id="@+id/action_menuResourcesFragment_to_resourcesTypesFragment"
-                app:destination="@id/resourcesTypesFragment" />
+                app:destination="@id/resourcesTypesFragment"
+                app:popUpTo="@id/resourcesTypesFragment"
+                app:popUpToInclusive="true" />
         </fragment>
         <fragment
             android:id="@+id/navigationResourcesFragment"
@@ -160,7 +162,13 @@
             android:id="@+id/valuesResourcesFragment"
             android:name="be.henallux.ig3.android.app.example.ui.module2.ValuesResourcesFragment"
             android:label="@string/module_2_resource_type_values"
-            tools:layout="@layout/mod2_fragment_values_resources" />
+            tools:layout="@layout/mod2_fragment_values_resources">
+            <action
+                android:id="@+id/action_valuesResourcesFragment_to_resourcesTypesFragment"
+                app:destination="@id/resourcesTypesFragment"
+                app:popUpTo="@id/resourcesTypesFragment"
+                app:popUpToInclusive="true" />
+        </fragment>
         <fragment
             android:id="@+id/drawableGlideFragment"
             android:name="be.henallux.ig3.android.app.example.ui.module2.DrawableGlideFragment"
