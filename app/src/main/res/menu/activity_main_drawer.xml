@@ -15,6 +15,7 @@
         <item
             android:id="@+id/mod3PresentationFragment"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_module_3" />
+            android:title="@string/menu_module_3"
+            android:visible="false" />
     </group>
 </menu>

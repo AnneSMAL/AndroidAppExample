@@ -322,12 +322,12 @@
         For more resource types, go and check <u>https://developer.android.com/guide/topics/resources/more-resources</u>
     </string>
 
-    <!-- To update -->
-    <string name="module_4_title">Layouts</string>
-    <string name="module_4_description">Layouts are XML files \"assembling\" all the UI components together.
-        Each activity and each fragment will, at least, be linked to one layout. \n
-        In this chapter, you will learn what is a layout, how to create one and how to link it to
-        an activity, a fragment, or another UI component.
+    <!-- Module 3 : App Architecture -->
+    <string name="module_3_title">App Architecture</string>
+    <string name="module_3_description">To maintain easily your app, it is recommended to write your
+        code following an architecture. \n
+        In this chapter, you will learn more about the default Android architecture called MVVM, and
+        on its dedicated components called <b>View Models</b>.
     </string>
 
     <string name="next">Next</string>

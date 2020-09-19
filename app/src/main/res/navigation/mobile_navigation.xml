@@ -18,7 +18,7 @@
 
     <fragment
         android:id="@+id/mod3PresentationFragment"
-        android:name="be.henallux.ig3.android.app.example.ui.module3.LayoutsPresentationFragment"
+        android:name="be.henallux.ig3.android.app.example.ui.module3.AppArchitecturePresentationFragment"
         android:label="@string/menu_module_3"
         tools:layout="@layout/main_fragment_module_presentation">
         <action

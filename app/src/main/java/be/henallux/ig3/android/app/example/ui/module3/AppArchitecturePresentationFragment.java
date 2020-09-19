@@ -3,16 +3,16 @@ package be.henallux.ig3.android.app.example.ui.module3;
 import be.henallux.ig3.android.app.example.R;
 import be.henallux.ig3.android.app.example.ui.ModulePresentationFragment;
 
-public class LayoutsPresentationFragment extends ModulePresentationFragment {
+public class AppArchitecturePresentationFragment extends ModulePresentationFragment {
 
     @Override
     protected Integer getTitleResources() {
-        return R.string.module_4_title;
+        return R.string.module_3_title;
     }
 
     @Override
     protected Integer getDescriptionResources() {
-        return R.string.module_4_description;
+        return R.string.module_3_description;
     }
 
     @Override
