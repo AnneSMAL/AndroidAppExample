@@ -10,7 +10,7 @@
         android:id="@+id/lifecycle_testing_my_counter_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/module_1_lifecycle_testing_my_counter"
+        android:text="@string/my_counter"
         android:textColor="@color/textBody"
         android:textSize="@dimen/text_size_headline_6"
         app:layout_constraintBottom_toBottomOf="parent"

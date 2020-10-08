@@ -9,7 +9,7 @@
     android:layout_marginRight="@dimen/activity_horizontal_margin"
     android:layout_marginEnd="@dimen/activity_horizontal_margin"
     android:layout_marginBottom="@dimen/activity_vertical_margin"
-    tools:context=".ui.module1.WhatIsAnActivityFragment">
+    tools:context=".ui.module3.AndroidArchitectureFragment">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -27,46 +27,32 @@
             android:paddingBottom="@dimen/container_scroll_bottom_padding">
 
             <TextView
-                android:id="@+id/what_is_a_view_model_description_text"
+                android:id="@+id/android_architecture_description_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/module_1_what_is_an_activity_description"
+                android:text="@string/module_3_android_mvvm_architecture"
                 android:textColor="@color/textBody"
                 android:textSize="@dimen/text_size_body_2" />
 
-            <Button
-                android:id="@+id/what_is_an_activity_camera_button"
-                style="@style/Widget.AppCompat.Button.Borderless"
+            <ImageView
+                android:id="@+id/android_architecture_image"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="32dp"
-                android:layout_marginBottom="32dp"
-                android:background="@color/colorAccent"
-                android:padding="4dp"
-                android:text="@string/module_1_go_to_camera"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/what_is_an_activity_how_to_use_text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/module_1_how_to_use_activities"
-                android:textColor="@color/textBody"
-                android:textSize="@dimen/text_size_body_2" />
+                android:adjustViewBounds="true"
+                android:src="@drawable/module_3_android_architecture" />
 
         </LinearLayout>
     </ScrollView>
 
     <Button
-        android:id="@+id/what_is_an_activity_next_button"
+        android:id="@+id/android_architecture_done_button"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:background="@color/colorPrimary"
         android:padding="4dp"
-        android:text="@string/next"
+        android:text="@string/done"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

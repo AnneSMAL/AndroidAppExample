@@ -9,7 +9,7 @@
     android:layout_marginRight="@dimen/activity_horizontal_margin"
     android:layout_marginEnd="@dimen/activity_horizontal_margin"
     android:layout_marginBottom="@dimen/activity_vertical_margin"
-    tools:context=".ui.module1.WhatIsAnActivityFragment">
+    tools:context=".ui.module3.WhatIsAViewModelFragment">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -30,36 +30,46 @@
                 android:id="@+id/what_is_a_view_model_description_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/module_1_what_is_an_activity_description"
+                android:text="@string/module_3_what_is_a_view_model"
                 android:textColor="@color/textBody"
                 android:textSize="@dimen/text_size_body_2" />
 
+            <TextView
+                android:id="@+id/mvvm_inspiration_description_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_default_margin"
+                android:text="@string/module_3_architecture_derived_from_mvvm"
+                android:textColor="@color/textBody"
+                android:textSize="@dimen/text_size_body_2" />
+
+            <TextView
+                android:id="@+id/view_model_my_counter_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/container_next_section_vertical_margin"
+                android:text="@string/my_counter"
+                android:textAlignment="center"
+                android:textColor="@color/textBody"
+                android:textSize="@dimen/text_size_headline_6" />
+
             <Button
-                android:id="@+id/what_is_an_activity_camera_button"
+                android:id="@+id/view_model_add_to_counter_button"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="32dp"
-                android:layout_marginBottom="32dp"
+                android:layout_marginTop="12dp"
                 android:background="@color/colorAccent"
                 android:padding="4dp"
-                android:text="@string/module_1_go_to_camera"
+                android:text="@string/add"
                 android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/what_is_an_activity_how_to_use_text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/module_1_how_to_use_activities"
-                android:textColor="@color/textBody"
-                android:textSize="@dimen/text_size_body_2" />
 
         </LinearLayout>
     </ScrollView>
 
     <Button
-        android:id="@+id/what_is_an_activity_next_button"
+        android:id="@+id/what_is_a_view_model_next_button"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

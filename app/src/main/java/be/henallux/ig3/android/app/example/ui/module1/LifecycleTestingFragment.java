@@ -113,7 +113,7 @@ public class LifecycleTestingFragment extends Fragment {
     }
 
     private void updateCounter(Integer counter) {
-        myCounterTextView.setText(getString(R.string.module_1_lifecycle_testing_my_counter, counter));
+        myCounterTextView.setText(getString(R.string.my_counter, counter));
     }
 
     /**

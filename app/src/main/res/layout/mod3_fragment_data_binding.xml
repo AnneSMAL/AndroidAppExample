@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Data Binding is requiring some specific elements in XML structure as well -->
+<!-- For it to work, you need the root tag to be a simple "layout" -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- You also need the data tag to link the XML to the ViewModel class -->
+    <data>
+
+        <variable
+            name="dataBindingViewModel"
+            type="be.henallux.ig3.android.app.example.ui.module3.DataBindingViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        tools:context=".ui.module3.DataBindingFragment">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/container_scroll_bottom_padding">
+
+                <TextView
+                    android:id="@+id/data_binding_description_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/module_3_what_is_data_binding"
+                    android:textColor="@color/textBody"
+                    android:textSize="@dimen/text_size_body_2" />
+
+                <!-- You can either link to methods of ViewModel, but also its LiveData -->
+                <TextView
+                    android:id="@+id/data_binding_my_counter_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/container_next_section_vertical_margin"
+                    android:text="@{@string/my_counter(dataBindingViewModel.dataBindingCounter)}"
+                    android:textAlignment="center"
+                    android:textColor="@color/textBody"
+                    android:textSize="@dimen/text_size_headline_6" />
+
+                <Button
+                    android:id="@+id/data_binding_add_to_counter_button"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="12dp"
+                    android:background="@color/colorAccent"
+                    android:padding="4dp"
+                    android:text="@string/add"
+                    android:textColor="@android:color/white"
+                    android:onClick="@{() -> dataBindingViewModel.incrementCounter()}" />
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/data_binding_next_button"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/colorPrimary"
+            android:padding="4dp"
+            android:text="@string/next"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -27,7 +27,7 @@
             android:paddingBottom="@dimen/container_scroll_bottom_padding">
 
             <TextView
-                android:id="@+id/what_is_a_fragment_description_text"
+                android:id="@+id/what_is_a_view_model_description_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/module_1_what_is_a_fragment_description"

@@ -92,7 +92,7 @@
         - I\'m rotating the phone ? \n
         - Android is killing my app to free some resources for other apps ? (Yes, … it does) \n
     </string>
-    <string name="module_1_lifecycle_testing_my_counter">My counter : %1$d</string>
+    <string name="my_counter">My counter : %1$d</string>
 
 
     <string name="module_1_what_is_a_fragment_title">What is a fragment ?</string>
@@ -329,6 +329,55 @@
         In this chapter, you will learn more about the default Android architecture called MVVM, and
         on its dedicated components called <b>View Models</b>.
     </string>
+    <string name="module_3_what_is_view_model_title">ViewModel</string>
+    <string name="module_3_data_binding_title">Data Binding &amp; ViewModels</string>
+    <string name="module_3_view_model_pass_args_title">Passer des arguments</string>
+    <string name="module_3_mvvm_architecture_title">Android MVVM Architecture</string>
+
+    <string name="module_3_what_is_a_view_model">ViewModel is a component provided by Android
+        in its official architecture pattern. This architecture is inspired from
+        the MVVM (Model - View - ViewModel) architecture. \n
+        A ViewModel is ALWAYS associated to
+        an activity or a fragment and is initialized / living / destroyed with it.
+    </string>
+    <string name="module_3_architecture_derived_from_mvvm">
+        <b><u>LiveData</u></b> \n
+        The architecture proposed by Android is unidirectional, meaning that View can communicate with
+        ViewModels, but ViewModels can not communicate with View. For this, we are using <b>LiveData</b>. \n
+        LiveData mechanism is inspired of the <i>Observer</i> design pattern : The View (Fragment or Activity)
+        will "listen" to the ViewModel properties, and make an action if there is any update. \n \n
+
+        Go to the code of this fragment and check the responsibility of each component.
+    </string>
+    <string name="module_3_what_is_data_binding">To avoid boilerplate code, it is possible to directly
+        link ViewModel variables with XML of the associated activity / fragment. This is thanks to
+        a mechanism called <b>Data Binding</b>. \n
+        Data Binding avoids then to the activity (or the fragment) to contain hatch code to link XML
+        UI elements and ViewModel. \n \n
+
+        Go to the code and check the difference with the previous screen :
+    </string>
+
+    <string name="module_3_pass_arguments_to_view_model">Sometimes, we need to transfer arguments
+        from the activity (or fragment) to the ViewModel when it is created. For example, like
+        arguments of the previous activity, … \n \n
+        Go to the code to check how those arguments are passed to the ViewModel. 
+    </string>
+    <string name="module_3_previous_counter_value">Value of the previous counter : %1$d</string>
+
+    <string name="module_3_android_mvvm_architecture">The MVVM architecture proposed by Android has
+        the following advantages : \n
+        - Separation of concerns between UI and business logic; \n
+        - Conflict management linked to the activity / fragment lifecycle; \n
+        - The ViewModel survives configuration changes (orientation, …); \n
+        - Unidirectional communication thanks to LiveData; \n
+        - … \n \n
+
+        Check in the code for module 3 classes how is implemented this architecture. \n \n
+
+        If you would like to discover other architecture patterns, go to https://github.com/android/architecture-samples
+    </string>
+
 
     <string name="next">Next</string>
     <string name="previous">Previous</string>

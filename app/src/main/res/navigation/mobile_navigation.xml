@@ -22,14 +22,9 @@
         android:label="@string/menu_module_3"
         tools:layout="@layout/main_fragment_module_presentation">
         <action
-            android:id="@+id/action_PresentationFragment_to_layoutStructureFragment"
-            app:destination="@id/nav_layout_structure" />
+            android:id="@+id/action_PresentationFragment_to_whatIsViewModelFragment"
+            app:destination="@id/mod3_nav_graph" />
     </fragment>
-    <fragment
-        android:id="@+id/nav_layout_structure"
-        android:name="be.henallux.ig3.android.app.example.ui.module2.LayoutStructureFragment"
-        android:label="@string/module_2_layout_structure_title"
-        tools:layout="@layout/mod2_fragment_layout_structure" />
 
     <fragment
         android:id="@+id/mod2PresentationFragment"
@@ -51,6 +46,9 @@
             <action
                 android:id="@+id/action_WhatIsActivityFragment_to_ActivityLifecycleFragment"
                 app:destination="@id/nav_mod1_activities_lifecycle" />
+            <action
+                android:id="@+id/action_nav_mod1_what_is_activity_to_nav_mod1_what_is_fragment2"
+                app:destination="@id/nav_mod1_what_is_fragment" />
         </fragment>
         <fragment
             android:id="@+id/nav_mod1_what_is_fragment"
@@ -60,6 +58,10 @@
             <action
                 android:id="@+id/action_WhatIsAFragmentFragment_to_firstUiFragment"
                 app:destination="@id/nav_mod1_first_ui" />
+            <argument
+                android:name="message"
+                app:argType="string"
+                app:nullable="true" />
         </fragment>
         <fragment
             android:id="@+id/nav_mod1_activities_lifecycle"
@@ -198,6 +200,51 @@
                 android:id="@+id/action_layoutViewBindingFragment_to_resourcesTypesFragment"
                 app:destination="@id/resourcesTypesFragment"
                 app:popUpTo="@id/resourcesTypesFragment"
+                app:popUpToInclusive="true" />
+        </fragment>
+    </navigation>
+    <navigation
+        android:id="@+id/mod3_nav_graph"
+        app:startDestination="@id/whatIsViewModelFragment">
+        <fragment
+            android:id="@+id/whatIsViewModelFragment"
+            android:name="be.henallux.ig3.android.app.example.ui.module3.WhatIsAViewModelFragment"
+            android:label="@string/module_3_what_is_view_model_title"
+            tools:layout="@layout/mod3_fragment_what_is_a_view_model">
+            <action
+                android:id="@+id/action_WhatIsViewModelFragment_to_dataBindingFragment"
+                app:destination="@id/dataBindingFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/dataBindingFragment"
+            android:name="be.henallux.ig3.android.app.example.ui.module3.DataBindingFragment"
+            android:label="@string/module_3_data_binding_title"
+            tools:layout="@layout/mod3_fragment_data_binding">
+            <action
+                android:id="@+id/action_dataBindingFragment_to_passArgumentsFragment"
+                app:destination="@id/passArgumentsFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/passArgumentsFragment"
+            android:name="be.henallux.ig3.android.app.example.ui.module3.PassArgumentsFragment"
+            android:label="@string/module_3_view_model_pass_args_title"
+            tools:layout="@layout/mod3_fragment_pass_arguments">
+            <action
+                android:id="@+id/action_passArgumentsFragment_to_androidArchitectureFragment"
+                app:destination="@id/androidArchitectureFragment" />
+            <argument
+                android:name="previousCounter"
+                app:argType="integer" />
+        </fragment>
+        <fragment
+            android:id="@+id/androidArchitectureFragment"
+            android:name="be.henallux.ig3.android.app.example.ui.module3.AndroidArchitectureFragment"
+            android:label="@string/module_3_mvvm_architecture_title"
+            tools:layout="@layout/mod3_fragment_android_architecture">
+            <action
+                android:id="@+id/action_androidArchitectureFragment_to_mod3PresentationFragment"
+                app:destination="@id/mod3PresentationFragment"
+                app:popUpTo="@id/mod3PresentationFragment"
                 app:popUpToInclusive="true" />
         </fragment>
     </navigation>

@@ -17,6 +17,6 @@ public class AppArchitecturePresentationFragment extends ModulePresentationFragm
 
     @Override
     protected Integer getNextScreenNavigationAction() {
-        return R.id.action_PresentationFragment_to_layoutStructureFragment;
+        return R.id.action_PresentationFragment_to_whatIsViewModelFragment;
     }
 }
