@@ -10,6 +10,7 @@
     <string name="menu_module_1">Module 1</string>
     <string name="menu_module_2">Module 2</string>
     <string name="menu_module_3">Module 3</string>
+    <string name="menu_module_4">Module 4</string>
 
     <string name="module_title_start">Start</string>
 
@@ -337,6 +338,63 @@
     <string name="write_anything">Write anything</string>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Module 4 Persistence -->
+    <string name="module_4_title">Persistence</string>
+    <string name="module_4_description">You often need to persist information locally :
+        User preferences, user profile, game high scores, etc.\n
+        In this chapter, you will learn two mains solutions to save information locally : <b>Shared Preferences</b> and <b>SQLite</b>.
+    </string>
+    <string name="module_4_two_solutions">There are several ways to store data locally in order to
+        make this data accessible to all application activities.\n\n
+        The two mains are :
+    </string>
+
+    <!-- Module 4 SharedPreferences -->
+    <string name="module_4_shared_preferences">SharedPreferences</string>
+    <string name="module_4_shared_preferences_resume">
+        - For unstructured data
+        - Small amounts
+    </string>
+    <string name="module_4_shared_preferences_description"> This is a key-value system for primitive types.
+        All the values are stored in a single file and you can have a global file for your whole app,
+        the <b>Shared Preferences</b>, or a file per activity, the Preferences
+        (this one interests us less here).
+    </string>
+    <string name="module_4_shared_preferences_write"> To write in SharedPreferences, you need to :\n
+        1. Get the preference editor \n
+        2. Put the primitives (key + value)\n
+        3. Commit the edition
+    </string>
+    <string name="module_4_shared_preferences_read"> To read in SharedPreferences, you need to :\n
+        1. Get the preferences \n
+        2. Specify the target key + a default value
+    </string>
+
+
+
+    <!-- Module 4 SQLite -->
+    <string name="module_4_sqlite">SQLite</string>
+    <string name="module_4_sqlite_resume">
+        - Large structured data
+    </string>
+    <string name="module_4_sqlite_description">
+        The good news is that to use SQLite in Android, you don\'t need to know SQL.
+        You will be using an ORM that will handle the work for you: Room
+    </string>
+    <string name="module_4_room_description"> Room has 3 major components:
+        <b>Database</b>, which holds all the data,
+        <b>Entities</b>, your models, and
+        <b>DAOs</b>, helpers to query various tables.\n
+        The need to use pure SQL statements is diminished, almost unexisting.
+    </string>
+    <string name="module_4_room_architecture"> As a good practice, you should expose your data as
+        Repositories, 1 Repository for 1 type of Entity, and the ViewModel calls the Repository.
+        The ViewModel doesn\'t know how the data is stored, it only knows it’s in the Repository,
+        but behind that, the data could be on the network, in a database, in a raw file …
+    </string>
+
+
 
     <!-- Image content Description -->
     <string name="glide_logo_url">https://raw.githubusercontent.com/bumptech/glide/master/static/glide_logo.png</string>
