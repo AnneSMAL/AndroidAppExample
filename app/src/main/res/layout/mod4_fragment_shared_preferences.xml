@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginStart="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+    android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:id="@+id/shared_preferences_description_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/module_4_shared_preferences_description"
+        android:textColor="@color/textBody"
+        android:textSize="@dimen/text_size_body_2"
+        app:layout_constraintBottom_toTopOf="@+id/shared_preferences_write_text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/shared_preferences_write_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/module_4_shared_preferences_write"
+        android:textColor="@color/textBody"
+        android:textSize="@dimen/text_size_body_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="209dp"
+        app:layout_constraintBottom_toTopOf="@+id/shared_preferences_read_text"
+        app:layout_constraintTop_toBottomOf="@+id/shared_preferences_description_text" />
+
+    <TextView
+        android:id="@+id/shared_preferences_read_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/module_4_shared_preferences_read"
+        android:textColor="@color/textBody"
+        android:textSize="@dimen/text_size_body_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shared_preferences_write_text"
+        app:layout_constraintBottom_toTopOf="@+id/shared_preferences_read_button"/>
+
+    <Button
+        android:id="@+id/shared_preferences_write_button"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/text_margin"
+        android:layout_marginEnd="@dimen/text_margin"
+        android:background="@color/colorAccent"
+        android:text="@string/module_4_write_pref_value"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/preferred_value_edit_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toEndOf="@+id/shared_preferences_read_button"
+        app:layout_constraintTop_toBottomOf="@+id/shared_preferences_read_text"
+        app:layout_constraintVertical_bias="0.504" />
+
+    <Button
+        android:id="@+id/shared_preferences_read_button"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/text_margin"
+        android:layout_marginEnd="@dimen/text_margin"
+        android:background="@color/colorAccent"
+        android:text="@string/module_4_read_pref_value"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/preferred_value_edit_text"
+        app:layout_constraintEnd_toStartOf="@+id/shared_preferences_write_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shared_preferences_read_text" />
+
+
+    <TextView
+        android:id="@+id/preferred_value_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/module_4_preferred_value"
+        app:layout_constraintBottom_toTopOf="@+id/shared_preferences_test_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/preferred_value_edit_text"
+        app:layout_constraintTop_toBottomOf="@+id/shared_preferences_read_button" />
+
+    <EditText
+        android:id="@+id/preferred_value_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="@string/module_4_preferred_value"
+        app:layout_constraintBottom_toTopOf="@+id/shared_preferences_test_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/preferred_value_text"
+        app:layout_constraintTop_toBottomOf="@+id/shared_preferences_read_button" />
+
+    <TextView
+        android:id="@+id/shared_preferences_test_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/module_shared_preferences_test"
+        android:textColor="@color/textBody"
+        android:textSize="@dimen/text_size_body_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/preferred_value_edit_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

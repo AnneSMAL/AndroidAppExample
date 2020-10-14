@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginStart="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+    android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/container_scroll_bottom_padding"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/two_solutions_description_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/container_next_section_vertical_margin"
+            android:text="@string/module_4_two_solutions"
+            android:textColor="@color/textBody"
+            android:textSize="@dimen/text_size_body_2" />
+
+        <Button
+            android:id="@+id/shared_preferences_button"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:text="@string/module_4_shared_preferences"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/shared_preferences_resume_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_default_margin"
+            android:layout_marginBottom="@dimen/container_next_section_vertical_margin"
+            android:text="@string/module_4_shared_preferences_resume"
+            android:textSize="@dimen/text_size_body_2"/>
+
+        <Button
+            android:id="@+id/sqlite_button"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/module_4_sqlite"
+            android:textColor="@android:color/white"
+            android:background="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/sqlite_resume_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_default_margin"
+            android:text="@string/module_4_sqlite_resume"
+            android:textColor="@color/textBody"
+            android:textSize="@dimen/text_size_body_2" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
