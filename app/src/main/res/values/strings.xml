@@ -444,6 +444,44 @@
     </string>
 
 
+    <!-- Module 5 : Async and Retrofit -->
+    <string name="module_5_title">Async &amp; API</string>
+    <string name="module_5_description">Asynchronism is current in an Android application : Every big
+        action such as saving data in a Room database or querying a web service needs to be done
+        in a dedicated thread, in an async way. \n
+        In this chapter, you will learn more about the <b>asynchronism</b> and how to query web services with
+        a library called <b>Retrofit</b>.
+    </string>
+
+    <string name="module_5_async_title">Asynchronism</string>
+    <string name="module_5_connect_to_server_title">Connect to a server</string>
+    <string name="module_5_retrofit_title">Retrofit</string>
+    <string name="module_5_kotlin_co_routines_title">Optional : Kotlin Co-routines</string>
+
+    <string name="module_5_what_is_async">As every program, an Android application has its <b>Main Thread</b>.
+        It\'s the thread "communicating" with the user, handling interactions with him, … So if it\'s stuck,
+        the UI freezes. That's why operations on the main thread must be as light as possible. \n
+        In Android, everything in lifecycle callbacks (onCreate, onResume, …) is executed on the Main Thread.
+        Automatically, if Android detects that you are making a "heavy" operation, it will terminate your app
+        in order to prevent you to let the user wait. You, then, need to manage those operations on
+        another thread, meaning <b>asynchronously</b>. \n \n
+
+        For this, you have different components : \n
+        - AsyncTasks; \n
+        - Schedulers; (not covered in this course) \n\n
+
+        To see an example of AsyncTask, go to the Module 4. \n \n
+
+        Querying a web service is then, a heavy operation. Let's check on the next screen how to
+        handle it.
+    </string>
+
+    <string name="module_5_connect_to_server_description">The majority of mobile apps needs to access
+        a back-end server through internet to get data. \n
+        To permit your app to connect to the internet, you need to add the corresponding permission
+        into the AndroidManifest.xml : \n
+
+    </string>
 
     <!-- Image content Description -->
     <string name="glide_logo_url">https://raw.githubusercontent.com/bumptech/glide/master/static/glide_logo.png</string>
