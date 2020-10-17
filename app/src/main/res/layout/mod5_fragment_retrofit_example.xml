@@ -6,7 +6,6 @@
 
     <!-- You also need the data tag to link the XML to the ViewModel class -->
     <data>
-
         <variable
             name="viewModel"
             type="be.henallux.ig3.android.app.example.ui.module5.RetrofitExampleViewModel" />
