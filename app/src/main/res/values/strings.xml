@@ -11,6 +11,7 @@
     <string name="menu_module_2">Module 2</string>
     <string name="menu_module_3">Module 3</string>
     <string name="menu_module_4">Module 4</string>
+    <string name="menu_module_5">Module 5</string>
 
     <string name="module_title_start">Start</string>
 
@@ -421,7 +422,6 @@
     </string>
 
 
-
     <!-- Module 4 SQLite -->
     <string name="module_4_sqlite">SQLite</string>
     <string name="module_4_sqlite_resume">
@@ -459,29 +459,73 @@
     <string name="module_5_kotlin_co_routines_title">Optional : Kotlin Co-routines</string>
 
     <string name="module_5_what_is_async">As every program, an Android application has its <b>Main Thread</b>.
-        It\'s the thread "communicating" with the user, handling interactions with him, … So if it\'s stuck,
-        the UI freezes. That's why operations on the main thread must be as light as possible. \n
+        It\'s the thread \"communicating\" with the user, handling interactions with him, … So if it\'s stuck,
+        the UI freezes. That\'s why operations on the main thread must be as light as possible. \n \n
+
         In Android, everything in lifecycle callbacks (onCreate, onResume, …) is executed on the Main Thread.
-        Automatically, if Android detects that you are making a "heavy" operation, it will terminate your app
+        Automatically, if Android detects that you are making a \"heavy\" operation, it will terminate your app
         in order to prevent you to let the user wait. You, then, need to manage those operations on
         another thread, meaning <b>asynchronously</b>. \n \n
 
         For this, you have different components : \n
-        - AsyncTasks; \n
+        - <b>AsyncTasks</b>; \n
         - Schedulers; (not covered in this course) \n\n
 
-        To see an example of AsyncTask, go to the Module 4. \n \n
+        To see an example of AsyncTask, <b>go to the Module 4</b>. \n \n
 
-        Querying a web service is then, a heavy operation. Let's check on the next screen how to
+        Querying a web service is then, a heavy operation. Let\'s check in the following screens how to
         handle it.
     </string>
 
     <string name="module_5_connect_to_server_description">The majority of mobile apps needs to access
         a back-end server through internet to get data. \n
         To permit your app to connect to the internet, you need to add the corresponding permission
-        into the AndroidManifest.xml : \n
+        into the AndroidManifest.xml : \n \n
 
+        \"android.permission.INTERNET\" \n \n
+
+        Comment this permission to check what is happening to your app when it tries to access internet
+        without the necessary rights. \n \n
+
+        Going through internet is necessary for you to request your back-end API. To ease our work, we
+        will use a library called <b>Retrofit</b>.
     </string>
+
+    <string name="module_5_retrofit_description"><b>Retrofit</b> is an Open-source library, transforming your
+        API (written as a Java Interface) into corresponding HTTP requests. \n
+        Retrofit is executing the HTTP requests in a different background thread. Meaning that there
+        is no need for you to create an AsyncTask : Retrofit is already taking care of the asynchronism
+        for you. \n \n
+
+        To transform your JSON into Java objects (and vice versa), you need to provide a <b>converter</b>
+        to Retrofit. You can either use GSON or <b>Moshi</b> which are both valid converters.
+    </string>
+
+    <string name="module_5_retrofit_dependencies">Go to your build.gradle and check the different dependencies
+        you need to add to use these libraries. 
+    </string>
+
+    <string name="module_5_retrofit_implementation">Here is an example of a Retrofit implementation.
+        Go to the fragment\'s code and check how is the communication implemented between our backend and
+        our mobile app.
+    </string>
+
+    <string name="module_5_pizza_info">Pizza Information</string>
+    <string name="module_5_pizza_name">Name : %1$s</string>
+    <string name="module_5_pizza_price">Price : %1$.2f €</string>
+    <string name="module_5_pizza_vegetarian">Vegetarian : </string>
+
+    <string name="http_get">GET</string>
+    <string name="http_post">POST</string>
+    <string name="http_put">PUT</string>
+    <string name="http_delete">DELETE</string>
+
+    <string name="http_no_connection">No data : Check your internet connection</string>
+
+    <!-- Errors -->
+    <string name="technical_error">An unknown error happened : Try again</string>
+    <string name="request_error">An error occurred during your request</string>
+
 
     <!-- Image content Description -->
     <string name="glide_logo_url">https://raw.githubusercontent.com/bumptech/glide/master/static/glide_logo.png</string>

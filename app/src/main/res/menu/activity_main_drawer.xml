@@ -16,5 +16,9 @@
             android:id="@+id/mod3PresentationFragment"
             android:icon="@drawable/ic_menu_gallery"
             android:title="@string/menu_module_3" />
+        <item
+            android:id="@+id/mod5PresentationFragment"
+            android:icon="@drawable/ic_web_api"
+            android:title="@string/menu_module_5" />
     </group>
 </menu>

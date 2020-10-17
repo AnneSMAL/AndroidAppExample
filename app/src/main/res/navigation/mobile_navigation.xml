@@ -248,4 +248,54 @@
                 app:popUpToInclusive="true" />
         </fragment>
     </navigation>
+    <fragment
+        android:id="@+id/mod5PresentationFragment"
+        android:name="be.henallux.ig3.android.app.example.ui.module5.AsyncPresentationFragment"
+        android:label="@string/menu_module_5">
+        <action
+            android:id="@+id/action_PresentationFragment_to_whatIsAsyncFragment"
+            app:destination="@id/mod5_nav_graph" />
+    </fragment>
+    <navigation
+        android:id="@+id/mod5_nav_graph"
+        app:startDestination="@id/whatIsAsyncFragment">
+        <fragment
+            android:id="@+id/whatIsAsyncFragment"
+            android:name="be.henallux.ig3.android.app.example.ui.module5.WhatIsAsyncFragment"
+            android:label="@string/module_5_async_title"
+            tools:layout="@layout/mod5_fragment_what_is_async">
+            <action
+                android:id="@+id/action_whatIsAsyncFragment_to_connectToServerFragment"
+                app:destination="@id/connectToServerFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/connectToServerFragment"
+            android:name="be.henallux.ig3.android.app.example.ui.module5.ConnectToServerFragment"
+            android:label="@string/module_5_connect_to_server_title"
+            tools:layout="@layout/mod5_fragment_connect_to_server">
+            <action
+                android:id="@+id/action_connectToServerFragment_to_whatIsRetrofitFragment"
+                app:destination="@id/whatIsRetrofitFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/whatIsRetrofitFragment"
+            android:name="be.henallux.ig3.android.app.example.ui.module5.WhatIsRetrofitFragment"
+            android:label="@string/module_5_retrofit_title"
+            tools:layout="@layout/mod5_fragment_what_is_retrofit">
+            <action
+                android:id="@+id/action_whatIsRetrofitFragment_to_retrofitExampleFragment"
+                app:destination="@id/retrofitExampleFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/retrofitExampleFragment"
+            android:name="be.henallux.ig3.android.app.example.ui.module5.RetrofitExampleFragment"
+            android:label="@string/module_5_retrofit_title"
+            tools:layout="@layout/mod5_fragment_retrofit_example">
+            <action
+                android:id="@+id/action_retrofitExampleFragment_to_mod5PresentationFragment"
+                app:destination="@id/mod5PresentationFragment"
+                app:popUpTo="@id/mod5PresentationFragment"
+                app:popUpToInclusive="true" />
+        </fragment>
+    </navigation>
 </navigation>

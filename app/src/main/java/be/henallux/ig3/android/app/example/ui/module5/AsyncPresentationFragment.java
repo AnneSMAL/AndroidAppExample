@@ -11,11 +11,11 @@ public class AsyncPresentationFragment extends ModulePresentationFragment {
 
     @Override
     protected Integer getDescriptionResources() {
-        return R.string.module_5_title;
+        return R.string.module_5_description;
     }
 
     @Override
     protected Integer getNextScreenNavigationAction() {
-        return null;
+        return R.id.action_PresentationFragment_to_whatIsAsyncFragment;
     }
 }
