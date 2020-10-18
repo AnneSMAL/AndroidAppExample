@@ -507,7 +507,9 @@
 
     <string name="module_5_retrofit_implementation">Here is an example of a Retrofit implementation.
         Go to the fragment\'s code and check how is the communication implemented between our backend and
-        our mobile app.
+        our mobile app. \n \n
+        Also, activate the airplane mode of your phone and launch the request again, to see what happens.
+        Then, go to the code to check how this behaviour is implemented.
     </string>
 
     <string name="module_5_pizza_info">Pizza Information</string>
@@ -533,5 +535,6 @@
         https://cdn-images-1.medium.com/max/1600/1*Ii4mMCS3QjKDQOML8y7TqA.png</string>
     <string name="img_source_android_developer" translatable="false">Source : android.developer.com</string>
     <string name="img_source_lisa_trapletti" translatable="false">Lisa Trapletti Creation</string>
+    <string name="refresh">Refresh</string>
 
 </resources>

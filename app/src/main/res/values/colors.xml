@@ -5,4 +5,5 @@
     <color name="colorAccent">#fab900</color>
 
     <color name="textBody">#3E3E3E</color>
+    <color name="grey_secondary">#B7C0C5</color>
 </resources>
