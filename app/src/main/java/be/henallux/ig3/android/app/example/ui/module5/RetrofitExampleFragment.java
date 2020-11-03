@@ -13,6 +13,7 @@ import androidx.navigation.Navigation;
 
 import be.henallux.ig3.android.app.example.R;
 import be.henallux.ig3.android.app.example.databinding.Mod5FragmentRetrofitExampleBinding;
+import be.henallux.ig3.android.app.example.models.NetworkError;
 
 public class RetrofitExampleFragment extends Fragment {
 
@@ -57,7 +58,7 @@ public class RetrofitExampleFragment extends Fragment {
         binding.pizzaProgressBar.setVisibility(View.VISIBLE);
     }
 
-    private void displayErrorScreen(RetrofitExampleViewModel.NetworkError error) {
+    private void displayErrorScreen(NetworkError error) {
         binding.pizzaProgressBar.setVisibility(View.GONE);
         binding.retrofitImplementationRefreshButton.setVisibility(View.VISIBLE);
 

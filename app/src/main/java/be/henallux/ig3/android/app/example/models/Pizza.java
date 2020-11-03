@@ -1,4 +1,4 @@
-package be.henallux.ig3.android.app.example.model;
+package be.henallux.ig3.android.app.example.models;
 
 public class Pizza {
     private String name;

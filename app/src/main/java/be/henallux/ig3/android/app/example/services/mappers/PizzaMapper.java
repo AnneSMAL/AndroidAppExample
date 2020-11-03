@@ -1,6 +1,6 @@
 package be.henallux.ig3.android.app.example.services.mappers;
 
-import be.henallux.ig3.android.app.example.model.Pizza;
+import be.henallux.ig3.android.app.example.models.Pizza;
 import be.henallux.ig3.android.app.example.repositories.web.dto.PizzaDto;
 
 public class PizzaMapper {

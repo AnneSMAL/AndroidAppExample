@@ -7,11 +7,14 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
+    <string name="refresh">Refresh</string>
+
     <string name="menu_module_1">Module 1</string>
     <string name="menu_module_2">Module 2</string>
     <string name="menu_module_3">Module 3</string>
     <string name="menu_module_4">Module 4</string>
     <string name="menu_module_5">Module 5</string>
+    <string name="menu_module_6">Module 6</string>
 
     <string name="module_title_start">Start</string>
 
@@ -570,7 +573,6 @@
         https://cdn-images-1.medium.com/max/1600/1*Ii4mMCS3QjKDQOML8y7TqA.png</string>
     <string name="img_source_android_developer" translatable="false">Source : android.developer.com</string>
     <string name="img_source_lisa_trapletti" translatable="false">Lisa Trapletti Creation</string>
-    <string name="refresh">Refresh</string>
     <string name="large_text">
         "Material is the metaphor.\n\n"
 
@@ -661,4 +663,59 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
 
+    <!-- Module 6 : Kotlin -->
+    <string name="module_6_title">Kotlin</string>
+    <string name="module_6_description">Since some years now, Google decided to choose <b>Kotlin</b> as its
+        preferred language to develop Android apps. That\'s why being able to understand Kotlin is
+        important in the mobile development world. \n
+        In this module, you will have a a look at Kotlin and its main differences with Java, but also
+        some useful links to help you to learn this new language.
+    </string>
+
+    <string name="module_6_what_is_kotlin_title">What is Kotlin ?</string>
+    <string name="module_6_what_is_kotlin_description">Kotlin is the preferred programming language of Google
+        to develop Android apps. It has been developed by JetBrains and is described by its creators
+        as <i>\"a modern programming language that makes developers happier\"</i>. \n
+        The main inspiration to create the Kotlin language is <b>Scala</b> , a programming language
+        more focus on the functional development. However, Kotlin goal was to group all the best features
+        of every existing language. \n \n \n
+
+        <b><u>What are the strengths of Kotlin ?</u></b> \n \n
+
+        - Kotlin is <b>concise</b> : It drastically reduces boilerplate code such as getters, setters,
+        and many other elements, making your code more concise but still very light and readable.
+        That is really helping to look over the code in a faster and easier way but also to maintain
+        less amount of code. \n \n
+
+        - Kotlin is <b>safe</b> : The language tries to avoid as much errors as possible, \"just\" by
+        its syntax. It\'s for example the case with NullPointerExceptions, that Kotlin tries to reduce
+        as much as possible by bringing the <i>Nullable</i> field management. However, Kotlin is not
+        making everything by itself : Developers should not forget that they need to \"play the game\" ;-) \n \n
+
+        - Kotlin is <b>interoperable</b> : It is designed to work perfectly with the Java language, as you
+        can see in the <i>KotlinPresentationFragment</i>. This is a really big advantage : You can slowly
+        migrate a project to Kotlin, without putting all your Java classes to the garbage. Android
+        Studio also incorporated a plugin to directly convert your Java code to Kotlin and vice-versa.
+        Too cool, isn\'t it ?
+    </string>
+    <string name="module_6_kotlin_example_title">Kotlin Example</string>
+    <string name="module_6_kotlin_example_description">In this screen, we will re-implement the Retrofit
+        Example, but using the Kotlin language, so that you can have an example of main differences between
+        Java and Kotlin. \n
+        Basically, Android features are the same (View Binding, Data Binding, …) but the language
+        syntax is different. Go to the code of this fragment to check that.
+    </string>
+    <string name="module_6_kotlin_links_title">Useful links</string>
+    <string name="module_6_kotlin_links_description">It exists plenty of interesting resources to learn more
+        about the Kotlin language. \n
+        In the useful links, we can find : \n  \n
+
+        - The official Kotlin documentation : https://kotlinlang.org/docs/reference/basic-syntax.html \n
+        - The online console : https://play.kotlinlang.org/ \n
+        - Udacity tutorial to learn Kotlin : https://classroom.udacity.com/courses/ud9011 \n
+        - Openclassrooms tutorial : https://openclassrooms.com/fr/courses/5353106-initiez-vous-a-kotlin \n \n \n
+
+
+        Enjoy your journey in the Kotlin sphere ! :-)
+    </string>
 </resources>

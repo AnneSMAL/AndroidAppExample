@@ -304,44 +304,84 @@
         android:label="@string/menu_module_4">
         <action
             android:id="@+id/action_mod4PresentationFragment_to_mod4TwoMainSolutionsFragment"
-            app:destination="@id/mod4TwoMainSolutionsFragment" />
+            app:destination="@id/mod4_nav_graph" />
+    </fragment>
+    <navigation
+        android:id="@+id/mod4_nav_graph"
+        app:startDestination="@id/mod4TwoMainSolutionsFragment">
+        <fragment
+            android:id="@+id/mod4TwoMainSolutionsFragment"
+            android:name="be.henallux.ig3.android.app.example.ui.module4.TwoMainSolutionsFragment"
+            android:label="@string/module_4_two_solutions_title">
+            <action
+                android:id="@+id/action_mod4TwoMainSolutionsFragment_to_mod4SharedPreferences"
+                app:destination="@id/mod4SharedPreferences" />
+            <action
+                android:id="@+id/action_mod4TwoMainSolutionsFragment_to_mod4RoomFragment"
+                app:destination="@id/mod4RoomFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/mod4SharedPreferences"
+            android:name="be.henallux.ig3.android.app.example.ui.module4.SharedPreferencesFragment"
+            android:label="@string/module_4_shared_preferences" />
+        <fragment
+            android:id="@+id/mod4RoomFragment"
+            android:name="be.henallux.ig3.android.app.example.ui.module4.RoomFragment"
+            android:label="@string/module_4_room_title">
+            <action
+                android:id="@+id/action_mod4RoomFragment_to_mod3PresentationFragment"
+                app:destination="@id/mod3PresentationFragment" />
+            <action
+                android:id="@+id/action_mod4RoomFragment_to_mod4WhatIsARecyclerViewFragment"
+                app:destination="@id/mod4WhatIsARecyclerViewFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/mod4WhatIsARecyclerViewFragment"
+            android:name="be.henallux.ig3.android.app.example.ui.module4.WhatIsRecyclerViewFragment"
+            android:label="@string/module_4_recycler_view">
+            <action
+                android:id="@+id/action_mod4WhatIsARecyclerViewFragment_to_mod4RecyclerViewFragment"
+                app:destination="@id/mod4RecyclerViewFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/mod4RecyclerViewFragment"
+            android:name="be.henallux.ig3.android.app.example.ui.module4.RecyclerViewFragment"
+            android:label="@string/module_4_recycler_view" />
+    </navigation>
+    <fragment
+        android:id="@+id/whatIsKotlinFragment"
+        android:name="be.henallux.ig3.android.app.example.ui.module6.WhatIsKotlinFragment"
+        android:label="@string/module_6_what_is_kotlin_title"
+        tools:layout="@layout/mod6_fragment_what_is_kotlin">
+        <action
+            android:id="@+id/action_whatIsKotlinFragment_to_kotlinExampleFragment"
+            app:destination="@id/kotlinExampleFragment" />
     </fragment>
     <fragment
-        android:id="@+id/mod4TwoMainSolutionsFragment"
-        android:name="be.henallux.ig3.android.app.example.ui.module4.TwoMainSolutionsFragment"
-        android:label="@string/module_4_two_solutions_title">
+        android:id="@+id/mod6PresentationFragment"
+        android:name="be.henallux.ig3.android.app.example.ui.module6.KotlinPresentationFragment"
+        android:label="@string/menu_module_6">
         <action
-            android:id="@+id/action_mod4TwoMainSolutionsFragment_to_mod4SharedPreferences"
-            app:destination="@id/mod4SharedPreferences" />
-        <action
-            android:id="@+id/action_mod4TwoMainSolutionsFragment_to_mod4RoomFragment"
-            app:destination="@id/mod4RoomFragment" />
+            android:id="@+id/action_mod6PresentationFragment_to_whatIsKotlinFragment"
+            app:destination="@id/whatIsKotlinFragment" />
     </fragment>
     <fragment
-        android:id="@+id/mod4SharedPreferences"
-        android:name="be.henallux.ig3.android.app.example.ui.module4.SharedPreferencesFragment"
-        android:label="@string/module_4_shared_preferences" />
-    <fragment
-        android:id="@+id/mod4RoomFragment"
-        android:name="be.henallux.ig3.android.app.example.ui.module4.RoomFragment"
-        android:label="@string/module_4_room_title">
+        android:id="@+id/kotlinExampleFragment"
+        android:name="be.henallux.ig3.android.app.example.ui.module6.KotlinExampleFragment"
+        android:label="@string/module_6_kotlin_example_title">
         <action
-            android:id="@+id/action_mod4RoomFragment_to_mod3PresentationFragment"
-            app:destination="@id/mod3PresentationFragment" />
-        <action
-            android:id="@+id/action_mod4RoomFragment_to_mod4WhatIsARecyclerViewFragment"
-            app:destination="@id/mod4WhatIsARecyclerViewFragment" />
+            android:id="@+id/action_kotlinExampleFragment_to_kotlinLinksFragment"
+            app:destination="@id/kotlinLinksFragment" />
     </fragment>
     <fragment
-        android:id="@+id/mod4WhatIsARecyclerViewFragment"
-        android:name="be.henallux.ig3.android.app.example.ui.module4.WhatIsRecyclerViewFragment"
-        android:label="@string/module_4_recycler_view">
+        android:id="@+id/kotlinLinksFragment"
+        android:name="be.henallux.ig3.android.app.example.ui.module6.KotlinLinksFragment"
+        android:label="@string/module_6_kotlin_links_title"
+        tools:layout="@layout/mod6_fragment_kotlin_links">
         <action
-            android:id="@+id/action_mod4WhatIsARecyclerViewFragment_to_mod4RecyclerViewFragment"
-            app:destination="@id/mod4RecyclerViewFragment" />
+            android:id="@+id/action_kotlinLinksFragment_to_mod6PresentationFragment"
+            app:destination="@id/mod6PresentationFragment"
+            app:popUpTo="@id/mod6PresentationFragment"
+            app:popUpToInclusive="true" />
     </fragment>
-    <fragment
-        android:id="@+id/mod4RecyclerViewFragment"
-        android:name="be.henallux.ig3.android.app.example.ui.module4.RecyclerViewFragment"
-        android:label="@string/module_4_recycler_view" />
 </navigation>

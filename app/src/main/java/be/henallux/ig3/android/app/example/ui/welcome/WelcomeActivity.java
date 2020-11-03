@@ -2,15 +2,14 @@ package be.henallux.ig3.android.app.example.ui.welcome;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import android.view.View;
-import android.widget.Button;
-
-import be.henallux.ig3.android.app.example.ui.MainActivity;
 import be.henallux.ig3.android.app.example.R;
+import be.henallux.ig3.android.app.example.ui.MainActivity;
 
 /**
  * Activity displayed when launching the mobile application. <br/>
