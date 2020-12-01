@@ -1,22 +1,22 @@
 package be.henallux.ig3.android.app.example.ui.module4;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 
-import androidx.navigation.Navigation;
+import androidx.fragment.app.Fragment;
+
 import be.henallux.ig3.android.app.example.R;
 
 public class SharedPreferencesFragment extends Fragment {
+    private static final String PREFERENCES_NAME = "AndroidAppExample";
+
     EditText preferredValue;
     SharedPreferences sharedPref;
 
@@ -33,7 +33,7 @@ public class SharedPreferencesFragment extends Fragment {
 
         preferredValue = root.findViewById(R.id.preferred_value_edit_text);
         // get preferences
-        sharedPref = this.getActivity().getPreferences(getContext().MODE_PRIVATE);
+        sharedPref = this.getActivity().getSharedPreferences(PREFERENCES_NAME, Context.MODE_PRIVATE);
 
         int value = sharedPref.getInt(getString(R.string.module_4_preferred_value), 42);
         preferredValue.setText(Integer.toString(value));
