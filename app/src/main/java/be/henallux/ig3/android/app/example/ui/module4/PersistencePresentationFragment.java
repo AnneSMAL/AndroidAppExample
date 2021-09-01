@@ -1,5 +1,7 @@
 package be.henallux.ig3.android.app.example.ui.module4;
 
+import android.os.Bundle;
+
 import be.henallux.ig3.android.app.example.R;
 import be.henallux.ig3.android.app.example.ui.ModulePresentationFragment;
 
