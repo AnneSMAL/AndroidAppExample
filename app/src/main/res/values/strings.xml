@@ -9,17 +9,16 @@
 
     <string name="refresh">Refresh</string>
 
-    <string name="menu_module_1">Module 1</string>
-    <string name="menu_module_2">Module 2</string>
-    <string name="menu_module_3">Module 3</string>
-    <string name="menu_module_4">Module 4</string>
-    <string name="menu_module_5">Module 5</string>
-    <string name="menu_module_6">Module 6</string>
+    <string name="menu_module_1">1. Activity &amp; Fragments</string>
+    <string name="menu_module_2">2. Resources</string>
+    <string name="menu_module_3">3. Architecture</string>
+    <string name="menu_module_4">4. Persistence</string>
+    <string name="menu_module_5">5. Async &amp; API</string>
+    <string name="menu_module_6">6. Kotlin</string>
 
     <string name="module_title_start">Start</string>
 
-
-    <string name="title_activity_welcome">Welcome !</string>
+    <string name="title_activity_welcome">AppExample</string>
 
     <string name="welcome_title">Welcome !</string>
     <string name="welcome_description">Through this application, you will learn how to develop an Android mobile app.
